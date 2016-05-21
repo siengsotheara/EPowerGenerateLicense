@@ -1,0 +1,239 @@
+c:\users\sieng sotheara\documents\visual studio 2013\Projects\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.exe.config
+c:\users\sieng sotheara\documents\visual studio 2013\Projects\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.exe
+c:\users\sieng sotheara\documents\visual studio 2013\Projects\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.pdb
+c:\users\sieng sotheara\documents\visual studio 2013\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csprojResolveAssemblyReference.cache
+c:\users\sieng sotheara\documents\visual studio 2013\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Properties.Resources.resources
+c:\users\sieng sotheara\documents\visual studio 2013\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csproj.GenerateResource.Cache
+c:\users\sieng sotheara\documents\visual studio 2013\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.exe
+c:\users\sieng sotheara\documents\visual studio 2013\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.pdb
+c:\users\sieng sotheara\documents\visual studio 2013\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.FormMain.resources
+C:\Users\Sieng Sotheara\documents\visual studio 2013\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicense.resources
+C:\Users\Sieng Sotheara\documents\visual studio 2013\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicenseMenuLeft.resources
+C:\Users\Sieng Sotheara\documents\visual studio 2013\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Diaglog.DialogAddNew.resources
+C:\Users\Sieng Sotheara\documents\visual studio 2013\Projects\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\km-KH\EPowerGenerateLicense.resources.dll
+C:\Users\Sieng Sotheara\documents\visual studio 2013\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicenseMenuLeft.km-KH.resources
+C:\Users\Sieng Sotheara\documents\visual studio 2013\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\km-KH\EPowerGenerateLicense.resources.dll
+C:\Users\Sieng Sotheara\documents\visual studio 2013\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.FormAddNewLicense.resources
+C:\Users\Sieng Sotheara\documents\visual studio 2013\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormUpdateLicense.resources
+C:\Users\Sieng Sotheara\documents\visual studio 2013\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Form1.resources
+C:\Users\Sieng Sotheara\documents\visual studio 2013\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlWork.resources
+C:\Users\Sieng Sotheara\documents\visual studio 2013\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlWorkMenuLeft.resources
+E:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.exe.config
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.exe
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.pdb
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csprojResolveAssemblyReference.cache
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormUpdateLicense.resources
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.FormAddNewLicense.resources
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.FormMain.resources
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Properties.Resources.resources
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csproj.GenerateResource.Cache
+E:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.exe
+E:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.pdb
+E:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\km-KH\EPowerGenerateLicense.resources.dll
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\km-KH\EPowerGenerateLicense.resources.dll
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormGenerateLicense.resources
+E:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\Interop.CrystalActiveXReportViewerLib105.dll
+E:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\AxInterop.CrystalActiveXReportViewerLib105.dll
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\Interop.CrystalActiveXReportViewerLib105.dll
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\AxInterop.CrystalActiveXReportViewerLib105.dll
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csproj.ResolveComReference.cache
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicense.resources
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicenseMenuLeft.resources
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportMenuLeft.resources
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlSchedule.resources
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlWork.resources
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlWorkMenuLeft.resources
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicenseMenuLeft.km-KH.resources
+D:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.exe.config
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\Interop.CrystalActiveXReportViewerLib105.dll
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\AxInterop.CrystalActiveXReportViewerLib105.dll
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csproj.ResolveComReference.cache
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.exe
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.pdb
+D:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.exe
+D:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.pdb
+D:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\km-KH\EPowerGenerateLicense.resources.dll
+D:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\Interop.CrystalActiveXReportViewerLib105.dll
+D:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\AxInterop.CrystalActiveXReportViewerLib105.dll
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csprojResolveAssemblyReference.cache
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormUpdateLicense.resources
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.FormAddNewLicense.resources
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormGenerateLicense.resources
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.FormMain.resources
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicense.resources
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicenseMenuLeft.resources
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReport.resources
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportMenuLeft.resources
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlSchedule.resources
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlWork.resources
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlWorkMenuLeft.resources
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Properties.Resources.resources
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicenseMenuLeft.km-KH.resources
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csproj.GenerateResource.Cache
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\km-KH\EPowerGenerateLicense.resources.dll
+D:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\Interop.CRAXDDRT.dll
+F:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.exe.config
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\Interop.CRAXDDRT.dll
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\Interop.CrystalActiveXReportViewerLib105.dll
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\AxInterop.CrystalActiveXReportViewerLib105.dll
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csproj.ResolveComReference.cache
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.exe
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.pdb
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csprojResolveAssemblyReference.cache
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormUpdateLicense.resources
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.FormAddNewLicense.resources
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormGenerateLicense.resources
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.FormMain.resources
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicense.resources
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicenseMenuLeft.resources
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportMenuLeft.resources
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlSchedule.resources
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlWork.resources
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlWorkMenuLeft.resources
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Properties.Resources.resources
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicenseMenuLeft.km-KH.resources
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csproj.GenerateResource.Cache
+F:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.exe
+F:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.pdb
+F:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\km-KH\EPowerGenerateLicense.resources.dll
+F:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\Interop.CrystalActiveXReportViewerLib105.dll
+F:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\AxInterop.CrystalActiveXReportViewerLib105.dll
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\km-KH\EPowerGenerateLicense.resources.dll
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\Interop.CRAXDDRT.dll
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormLicenseAvailableBySeason.resources
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportLicenseAccount.resources
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportLicenseGenerate.resources
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportLicenseAvailable.resources
+E:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlSeason.resources
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormLicenseAvailableBySeason.resources
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportLicenseAvailable.resources
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportLicenseAccount.resources
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportLicenseGenerate.resources
+F:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlSeason.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.exe.config
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\Interop.CRAXDDRT.dll
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\Interop.CrystalActiveXReportViewerLib105.dll
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\AxInterop.CrystalActiveXReportViewerLib105.dll
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csproj.ResolveComReference.cache
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.exe
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.pdb
+H:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.exe
+H:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.pdb
+H:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\km-KH\EPowerGenerateLicense.resources.dll
+H:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\Interop.CrystalActiveXReportViewerLib105.dll
+H:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\AxInterop.CrystalActiveXReportViewerLib105.dll
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csprojResolveAssemblyReference.cache
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormLicenseAvailableBySeason.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormUpdateLicense.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.FormAddNewLicense.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormGenerateLicense.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.FormMain.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicense.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportLicenseAvailable.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicenseMenuLeft.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportLicenseAccount.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportLicenseGenerate.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportMenuLeft.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlSchedule.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlSeason.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlWork.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlWorkMenuLeft.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Properties.Resources.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicenseMenuLeft.km-KH.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csproj.GenerateResource.Cache
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\km-KH\EPowerGenerateLicense.resources.dll
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicenseSpecial.resources
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.exe.config
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\Interop.CRAXDDRT.dll
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\Interop.CrystalActiveXReportViewerLib105.dll
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\AxInterop.CrystalActiveXReportViewerLib105.dll
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csproj.ResolveComReference.cache
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.exe
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.pdb
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.exe
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.pdb
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\km-KH\EPowerGenerateLicense.resources.dll
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\Interop.CrystalActiveXReportViewerLib105.dll
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\AxInterop.CrystalActiveXReportViewerLib105.dll
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csprojResolveAssemblyReference.cache
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormLicenseAvailableBySeason.resources
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormUpdateLicense.resources
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.FormAddNewLicense.resources
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormGenerateLicense.resources
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.FormMain.resources
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicense.resources
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicenseSpecial.resources
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportLicenseAvailable.resources
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicenseMenuLeft.resources
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportLicenseAccount.resources
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportLicenseGenerate.resources
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportMenuLeft.resources
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlSchedule.resources
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlSeason.resources
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlWork.resources
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlWorkMenuLeft.resources
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Properties.Resources.resources
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicenseMenuLeft.km-KH.resources
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csproj.GenerateResource.Cache
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\km-KH\EPowerGenerateLicense.resources.dll
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormAddNewSeason.resources
+C:\Users\Sieng Sotheara\Desktop\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormUpdateSeason.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormAddNewSeason.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormUpdateSeason.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\SoftTech.dll
+H:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\Interop.CRAXDDRT.dll
+H:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\Microsoft.Office.Interop.Excel.dll
+H:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\office.dll
+H:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\Microsoft.Vbe.Interop.dll
+H:\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\en-GB\SoftTech.resources.dll
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormAddNewSpecialLicense.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormEditSpecialLicense.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlUser.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormAddUser.resources
+H:\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormUpdateUser.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.exe.config
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\Interop.CRAXDDRT.dll
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\Interop.CrystalActiveXReportViewerLib105.dll
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\AxInterop.CrystalActiveXReportViewerLib105.dll
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csproj.ResolveComReference.cache
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.exe
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.pdb
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.exe
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\SoftTech.dll
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\Interop.CRAXDDRT.dll
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\AxInterop.CrystalActiveXReportViewerLib105.dll
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\Interop.CrystalActiveXReportViewerLib105.dll
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\office.dll
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\en-GB\SoftTech.resources.dll
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csprojResolveAssemblyReference.cache
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormAddNewSeason.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormAddNewSpecialLicense.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormAddUser.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormEditSpecialLicense.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormLicenseAvailableBySeason.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormUpdateLicense.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.FormAddNewLicense.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormGenerateLicense.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormUpdateSeason.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Component.FormUpdateUser.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.FormMain.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicense.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicenseSpecial.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportLicenseAvailable.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicenseMenuLeft.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportLicenseAccount.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportLicenseGenerate.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlReportMenuLeft.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlSchedule.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlSeason.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlUser.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlWork.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlWorkMenuLeft.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Properties.Resources.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicenseMenuLeft.km-KH.resources
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csproj.GenerateResource.Cache
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\km-KH\EPowerGenerateLicense.resources.dll
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\EPowerGenerateLicense.pdb
+D:\Projects\EPowerGenerateLicense\EPowerGenerateLicense\bin\Debug\km-KH\EPowerGenerateLicense.resources.dll

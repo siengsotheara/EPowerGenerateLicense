@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A29586DD-A4D7-41D0-9CD5-0B05FF81CC7F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EPowerGenerateLicense</RootNamespace>
+    <AssemblyName>EPowerGenerateLicense</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon-app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Business Objects\Common\2.8\managed\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>E:\Framework\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\..\..\..\Desktop\Metro\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\..\..\..\Desktop\Metro\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\..\..\..\..\Desktop\Metro\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="SoftTech">
+      <HintPath>C:\Program Files (x86)\SoftTech\E-Power\SoftTech.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\CLASS_TBL_COMPANY.cs" />
+    <Compile Include="Class\CLASS_TBL_LICENSE.cs" />
+    <Compile Include="Class\CLASS_TBL_LICENSE_AVAILABLE.cs" />
+    <Compile Include="Class\CLASS_TBL_LICENSE_GENERATE.cs" />
+    <Compile Include="Class\CLASS_TBL_LICENSE_SPECIAL.cs" />
+    <Compile Include="Class\CLASS_TBL_LICENSE_TYPE.cs" />
+    <Compile Include="Class\CLASS_TBL_MIX.cs" />
+    <Compile Include="Class\CLASS_TBL_SCHEDULE.cs" />
+    <Compile Include="Class\CLASS_TBL_SEASON.cs" />
+    <Compile Include="Class\CLASS_TBL_USER.cs" />
+    <Compile Include="Class\CLASS_VIEW_REPORT.cs" />
+    <Compile Include="Component\FormAddNewSeason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\FormAddNewSeason.Designer.cs">
+      <DependentUpon>FormAddNewSeason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\FormAddNewSpecialLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\FormAddNewSpecialLicense.Designer.cs">
+      <DependentUpon>FormAddNewSpecialLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\FormAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\FormAddUser.Designer.cs">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\FormEditSpecialLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\FormEditSpecialLicense.Designer.cs">
+      <DependentUpon>FormEditSpecialLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\FormLicenseAvailableBySeason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\FormLicenseAvailableBySeason.Designer.cs">
+      <DependentUpon>FormLicenseAvailableBySeason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\FormUpdateLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\FormUpdateLicense.Designer.cs">
+      <DependentUpon>FormUpdateLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\FormAddNewLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\FormAddNewLicense.Designer.cs">
+      <DependentUpon>FormAddNewLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\FormGenerateLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\FormGenerateLicense.Designer.cs">
+      <DependentUpon>FormGenerateLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\FormUpdateSeason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\FormUpdateSeason.Designer.cs">
+      <DependentUpon>FormUpdateSeason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\FormUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\FormUpdateUser.Designer.cs">
+      <DependentUpon>FormUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ControlLicense.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\ControlLicense.designer.cs">
+      <DependentUpon>ControlLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ControlLicenseSpecial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\ControlLicenseSpecial.Designer.cs">
+      <DependentUpon>ControlLicenseSpecial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ControlReportLicenseAvailable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\ControlReportLicenseAvailable.Designer.cs">
+      <DependentUpon>ControlReportLicenseAvailable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ControlLicenseMenuLeft.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\ControlLicenseMenuLeft.designer.cs">
+      <DependentUpon>ControlLicenseMenuLeft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ControlReportLicenseAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\ControlReportLicenseAccount.designer.cs">
+      <DependentUpon>ControlReportLicenseAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ControlReportLicenseGenerate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\ControlReportLicenseGenerate.Designer.cs">
+      <DependentUpon>ControlReportLicenseGenerate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ControlReportMenuLeft.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\ControlReportMenuLeft.designer.cs">
+      <DependentUpon>ControlReportMenuLeft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ControlSchedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\ControlSchedule.designer.cs">
+      <DependentUpon>ControlSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ControlSeason.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\ControlSeason.Designer.cs">
+      <DependentUpon>ControlSeason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ControlUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\ControlUser.Designer.cs">
+      <DependentUpon>ControlUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ControlWork.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\ControlWork.designer.cs">
+      <DependentUpon>ControlWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ControlWorkMenuLeft.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\ControlWorkMenuLeft.designer.cs">
+      <DependentUpon>ControlWorkMenuLeft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="License.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>License.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TBL_COMPANY_DATA_ACCESS.cs" />
+    <Compile Include="Model\TBL_LICENSE_DATA_ACCESS.cs" />
+    <Compile Include="Model\TBL_LICENSE_GENERATE_DATA_ACCESS.cs" />
+    <Compile Include="Model\TBL_LICENSE_TYPE_DATA_ACCESS.cs" />
+    <Compile Include="Model\TBL_SCHEDULE_DATA_ACCESS.cs" />
+    <Compile Include="Model\TBL_SEASON_DATA_ACCESS.cs" />
+    <Compile Include="Model\TBL_USER_DATA_ACCESS.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Component\FormAddNewSeason.resx">
+      <DependentUpon>FormAddNewSeason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\FormAddNewSpecialLicense.resx">
+      <DependentUpon>FormAddNewSpecialLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\FormAddUser.resx">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\FormEditSpecialLicense.resx">
+      <DependentUpon>FormEditSpecialLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\FormLicenseAvailableBySeason.resx">
+      <DependentUpon>FormLicenseAvailableBySeason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\FormUpdateLicense.resx">
+      <DependentUpon>FormUpdateLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\FormAddNewLicense.resx">
+      <DependentUpon>FormAddNewLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\FormGenerateLicense.resx">
+      <DependentUpon>FormGenerateLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\FormUpdateSeason.resx">
+      <DependentUpon>FormUpdateSeason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\FormUpdateUser.resx">
+      <DependentUpon>FormUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ControlLicense.resx">
+      <DependentUpon>ControlLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ControlLicenseSpecial.resx">
+      <DependentUpon>ControlLicenseSpecial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ControlReportLicenseAvailable.resx">
+      <DependentUpon>ControlReportLicenseAvailable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ControlLicenseMenuLeft.km-KH.resx">
+      <DependentUpon>ControlLicenseMenuLeft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ControlLicenseMenuLeft.resx">
+      <DependentUpon>ControlLicenseMenuLeft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ControlReportLicenseAccount.resx">
+      <DependentUpon>ControlReportLicenseAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ControlReportLicenseGenerate.resx">
+      <DependentUpon>ControlReportLicenseGenerate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ControlReportMenuLeft.resx">
+      <DependentUpon>ControlReportMenuLeft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ControlSchedule.resx">
+      <DependentUpon>ControlSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ControlSeason.resx">
+      <DependentUpon>ControlSeason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ControlUser.resx">
+      <DependentUpon>ControlUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ControlWork.resx">
+      <DependentUpon>ControlWork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ControlWorkMenuLeft.resx">
+      <DependentUpon>ControlWorkMenuLeft.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="License.dbml.layout">
+      <DependentUpon>License.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="License.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>License.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\write.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-icon-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon-app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxCrystalActiveXReportViewerLib105">
+      <Guid>{A30B2DDF-C00F-469F-A23C-D6177608A128}</Guid>
+      <VersionMajor>10</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="CRAXDDRT">
+      <Guid>{27ACBFDA-8DE9-446D-872F-11824636EF7C}</Guid>
+      <VersionMajor>10</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalActiveXReportViewerLib105">
+      <Guid>{A30B2DDF-C00F-469F-A23C-D6177608A128}</Guid>
+      <VersionMajor>10</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
