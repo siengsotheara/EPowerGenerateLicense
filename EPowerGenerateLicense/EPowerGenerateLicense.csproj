@@ -200,6 +200,12 @@
     <Compile Include="Interface\ControlSeason.Designer.cs">
       <DependentUpon>ControlSeason.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface\ControlSurvey.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interface\ControlSurvey.Designer.cs">
+      <DependentUpon>ControlSurvey.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface\ControlUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -294,6 +300,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\ControlSeason.resx">
       <DependentUpon>ControlSeason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\ControlSurvey.resx">
+      <DependentUpon>ControlSurvey.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\ControlUser.resx">
       <DependentUpon>ControlUser.cs</DependentUpon>

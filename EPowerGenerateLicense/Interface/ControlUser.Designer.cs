@@ -190,6 +190,7 @@
             // Column2
             // 
             this.Column2.DataPropertyName = "USERNAME";
+            this.Column2.FillWeight = 179.6954F;
             this.Column2.HeaderText = "ឈ្មោះអ្នកប្រើ";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
@@ -201,6 +202,7 @@
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.NullValue = false;
             this.Column3.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Column3.FillWeight = 20.30457F;
             this.Column3.HeaderText = "ស្ថានភាព";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
@@ -210,6 +212,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.dataGridViewUser);
             this.Controls.Add(this.panel4);
             this.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);

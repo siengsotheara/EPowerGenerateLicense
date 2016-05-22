@@ -14,12 +14,6 @@
         <elementListCompartment Id="b53f694b-26fe-4b17-b33e-ff1d1c08271a" absoluteBounds="2.765, 2.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="e8f8a958-61e0-4b4e-8eeb-26b0b2c91a93" absoluteBounds="0.5, 0.5, 2, 1.5785953776041666">
-      <DataClassMoniker Name="/LicenseDataContext/TBL_LICENSE_GENERATE" />
-      <nestedChildShapes>
-        <elementListCompartment Id="c62afa99-c448-4c20-9729-7b82c66bfe3b" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
     <classShape Id="204dc369-cf4c-49fd-8508-7ae3d22a4912" absoluteBounds="0.5, 2.25, 2, 2.1554996744791666">
       <DataClassMoniker Name="/LicenseDataContext/TBL_LICENSE_TYPE" />
       <nestedChildShapes>
@@ -54,6 +48,12 @@
       <DataClassMoniker Name="/LicenseDataContext/TBL_LICENSE" />
       <nestedChildShapes>
         <elementListCompartment Id="992ec225-202c-4e5b-98bb-54898a5107cd" absoluteBounds="5.0150000000000006, 2.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e37fed36-dec3-44d8-b6e5-950174d3512f" absoluteBounds="0.5, 0.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/LicenseDataContext/TBL_LICENSE_GENERATE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8ff283fa-db6f-42c4-880d-0fdd12b3efa9" absoluteBounds="0.51499999999999968, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

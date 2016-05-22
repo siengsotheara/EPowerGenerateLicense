@@ -282,6 +282,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.dataGridViewLicense);
             this.Controls.Add(this.panel4);
             this.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);

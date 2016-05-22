@@ -210,7 +210,8 @@
             // Column5
             // 
             this.Column5.DataPropertyName = "SEASON_NAME";
-            this.Column5.HeaderText = "រដូវកាលទី";
+            this.Column5.FillWeight = 148.1476F;
+            this.Column5.HeaderText = "រដូវកាល";
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -218,6 +219,7 @@
             // Column10
             // 
             this.Column10.DataPropertyName = "NOTE";
+            this.Column10.FillWeight = 148.1476F;
             this.Column10.HeaderText = "សំគាល់";
             this.Column10.Name = "Column10";
             this.Column10.ReadOnly = true;
@@ -228,6 +230,7 @@
             this.Column3.DataPropertyName = "DATE_FOR";
             dataGridViewCellStyle2.NullValue = null;
             this.Column3.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Column3.FillWeight = 73.69604F;
             this.Column3.HeaderText = "សម្រាប់ថ្ងៃទី";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
@@ -238,6 +241,7 @@
             this.Column6.DataPropertyName = "TOTAL_LICENSE";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.Column6.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Column6.FillWeight = 55.83756F;
             this.Column6.HeaderText = "ចំនួនសរុបអាជ្ញាប័ណ្ឌ";
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
@@ -249,6 +253,7 @@
             this.Column7.DataPropertyName = "REMAIN_LICENSE";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.Column7.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Column7.FillWeight = 74.17124F;
             this.Column7.HeaderText = "ចំនួនអាជ្ញាប័ណ្ឌមិនទាន់ចេញ";
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
@@ -283,15 +288,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private MetroFramework.Controls.MetroButton btnGenerate;
+        private MetroFramework.Controls.MetroCheckBox ckShowAllSeason;
+        public System.Windows.Forms.ComboBox cboSeason;
+        public System.Windows.Forms.DataGridView dataGridViewGenerate;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewLinkColumn Column7;
-        private MetroFramework.Controls.MetroCheckBox ckShowAllSeason;
-        public System.Windows.Forms.ComboBox cboSeason;
-        public System.Windows.Forms.DataGridView dataGridViewGenerate;
 
     }
 }

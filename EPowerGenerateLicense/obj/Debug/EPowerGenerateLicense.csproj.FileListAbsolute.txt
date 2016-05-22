@@ -283,3 +283,4 @@ D:\EPower CCL\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenera
 D:\EPower CCL\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlLicenseMenuLeft.km-KH.resources
 D:\EPower CCL\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.csproj.GenerateResource.Cache
 D:\EPower CCL\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\km-KH\EPowerGenerateLicense.resources.dll
+D:\EPower CCL\EPowerGenerateLicense\EPowerGenerateLicense\obj\Debug\EPowerGenerateLicense.Interface.ControlSurvey.resources

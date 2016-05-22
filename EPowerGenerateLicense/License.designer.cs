@@ -36,9 +36,6 @@ namespace EPowerGenerateLicense
     partial void InsertTBL_COMPANY(TBL_COMPANY instance);
     partial void UpdateTBL_COMPANY(TBL_COMPANY instance);
     partial void DeleteTBL_COMPANY(TBL_COMPANY instance);
-    partial void InsertTBL_LICENSE_GENERATE(TBL_LICENSE_GENERATE instance);
-    partial void UpdateTBL_LICENSE_GENERATE(TBL_LICENSE_GENERATE instance);
-    partial void DeleteTBL_LICENSE_GENERATE(TBL_LICENSE_GENERATE instance);
     partial void InsertTBL_LICENSE_TYPE(TBL_LICENSE_TYPE instance);
     partial void UpdateTBL_LICENSE_TYPE(TBL_LICENSE_TYPE instance);
     partial void DeleteTBL_LICENSE_TYPE(TBL_LICENSE_TYPE instance);
@@ -57,6 +54,9 @@ namespace EPowerGenerateLicense
     partial void InsertTBL_LICENSE(TBL_LICENSE instance);
     partial void UpdateTBL_LICENSE(TBL_LICENSE instance);
     partial void DeleteTBL_LICENSE(TBL_LICENSE instance);
+    partial void InsertTBL_LICENSE_GENERATE(TBL_LICENSE_GENERATE instance);
+    partial void UpdateTBL_LICENSE_GENERATE(TBL_LICENSE_GENERATE instance);
+    partial void DeleteTBL_LICENSE_GENERATE(TBL_LICENSE_GENERATE instance);
     #endregion
 		
 		public LicenseDataContext() : 
@@ -105,14 +105,6 @@ namespace EPowerGenerateLicense
 			}
 		}
 		
-		public System.Data.Linq.Table<TBL_LICENSE_GENERATE> TBL_LICENSE_GENERATEs
-		{
-			get
-			{
-				return this.GetTable<TBL_LICENSE_GENERATE>();
-			}
-		}
-		
 		public System.Data.Linq.Table<TBL_LICENSE_TYPE> TBL_LICENSE_TYPEs
 		{
 			get
@@ -158,6 +150,14 @@ namespace EPowerGenerateLicense
 			get
 			{
 				return this.GetTable<TBL_LICENSE>();
+			}
+		}
+		
+		public System.Data.Linq.Table<TBL_LICENSE_GENERATE> TBL_LICENSE_GENERATEs
+		{
+			get
+			{
+				return this.GetTable<TBL_LICENSE_GENERATE>();
 			}
 		}
 		
@@ -347,140 +347,6 @@ namespace EPowerGenerateLicense
 					this._ADDRESS = value;
 					this.SendPropertyChanged("ADDRESS");
 					this.OnADDRESSChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TBL_LICENSE_GENERATE")]
-	public partial class TBL_LICENSE_GENERATE : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _LICENSE_GENERATE_ID;
-		
-		private int _SCHEDULE_ID;
-		
-		private System.DateTime _CREATE_ON;
-		
-		private string _CREATE_BY;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnLICENSE_GENERATE_IDChanging(int value);
-    partial void OnLICENSE_GENERATE_IDChanged();
-    partial void OnSCHEDULE_IDChanging(int value);
-    partial void OnSCHEDULE_IDChanged();
-    partial void OnCREATE_ONChanging(System.DateTime value);
-    partial void OnCREATE_ONChanged();
-    partial void OnCREATE_BYChanging(string value);
-    partial void OnCREATE_BYChanged();
-    #endregion
-		
-		public TBL_LICENSE_GENERATE()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LICENSE_GENERATE_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int LICENSE_GENERATE_ID
-		{
-			get
-			{
-				return this._LICENSE_GENERATE_ID;
-			}
-			set
-			{
-				if ((this._LICENSE_GENERATE_ID != value))
-				{
-					this.OnLICENSE_GENERATE_IDChanging(value);
-					this.SendPropertyChanging();
-					this._LICENSE_GENERATE_ID = value;
-					this.SendPropertyChanged("LICENSE_GENERATE_ID");
-					this.OnLICENSE_GENERATE_IDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SCHEDULE_ID", DbType="Int NOT NULL")]
-		public int SCHEDULE_ID
-		{
-			get
-			{
-				return this._SCHEDULE_ID;
-			}
-			set
-			{
-				if ((this._SCHEDULE_ID != value))
-				{
-					this.OnSCHEDULE_IDChanging(value);
-					this.SendPropertyChanging();
-					this._SCHEDULE_ID = value;
-					this.SendPropertyChanged("SCHEDULE_ID");
-					this.OnSCHEDULE_IDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_ON", DbType="DateTime NOT NULL")]
-		public System.DateTime CREATE_ON
-		{
-			get
-			{
-				return this._CREATE_ON;
-			}
-			set
-			{
-				if ((this._CREATE_ON != value))
-				{
-					this.OnCREATE_ONChanging(value);
-					this.SendPropertyChanging();
-					this._CREATE_ON = value;
-					this.SendPropertyChanged("CREATE_ON");
-					this.OnCREATE_ONChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_BY", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
-		public string CREATE_BY
-		{
-			get
-			{
-				return this._CREATE_BY;
-			}
-			set
-			{
-				if ((this._CREATE_BY != value))
-				{
-					this.OnCREATE_BYChanging(value);
-					this.SendPropertyChanging();
-					this._CREATE_BY = value;
-					this.SendPropertyChanged("CREATE_BY");
-					this.OnCREATE_BYChanged();
 				}
 			}
 		}
@@ -1505,6 +1371,212 @@ namespace EPowerGenerateLicense
 					this._CREATE_ON = value;
 					this.SendPropertyChanged("CREATE_ON");
 					this.OnCREATE_ONChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IS_ACTIVE", DbType="Bit NOT NULL")]
+		public bool IS_ACTIVE
+		{
+			get
+			{
+				return this._IS_ACTIVE;
+			}
+			set
+			{
+				if ((this._IS_ACTIVE != value))
+				{
+					this.OnIS_ACTIVEChanging(value);
+					this.SendPropertyChanging();
+					this._IS_ACTIVE = value;
+					this.SendPropertyChanged("IS_ACTIVE");
+					this.OnIS_ACTIVEChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TBL_LICENSE_GENERATE")]
+	public partial class TBL_LICENSE_GENERATE : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _LICENSE_GENERATE_ID;
+		
+		private int _SCHEDULE_ID;
+		
+		private System.DateTime _CREATE_ON;
+		
+		private string _CREATE_BY;
+		
+		private string _NOTE;
+		
+		private System.DateTime _LAST_MODIFIED;
+		
+		private bool _IS_ACTIVE;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnLICENSE_GENERATE_IDChanging(int value);
+    partial void OnLICENSE_GENERATE_IDChanged();
+    partial void OnSCHEDULE_IDChanging(int value);
+    partial void OnSCHEDULE_IDChanged();
+    partial void OnCREATE_ONChanging(System.DateTime value);
+    partial void OnCREATE_ONChanged();
+    partial void OnCREATE_BYChanging(string value);
+    partial void OnCREATE_BYChanged();
+    partial void OnNOTEChanging(string value);
+    partial void OnNOTEChanged();
+    partial void OnLAST_MODIFIEDChanging(System.DateTime value);
+    partial void OnLAST_MODIFIEDChanged();
+    partial void OnIS_ACTIVEChanging(bool value);
+    partial void OnIS_ACTIVEChanged();
+    #endregion
+		
+		public TBL_LICENSE_GENERATE()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LICENSE_GENERATE_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int LICENSE_GENERATE_ID
+		{
+			get
+			{
+				return this._LICENSE_GENERATE_ID;
+			}
+			set
+			{
+				if ((this._LICENSE_GENERATE_ID != value))
+				{
+					this.OnLICENSE_GENERATE_IDChanging(value);
+					this.SendPropertyChanging();
+					this._LICENSE_GENERATE_ID = value;
+					this.SendPropertyChanged("LICENSE_GENERATE_ID");
+					this.OnLICENSE_GENERATE_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SCHEDULE_ID", DbType="Int NOT NULL")]
+		public int SCHEDULE_ID
+		{
+			get
+			{
+				return this._SCHEDULE_ID;
+			}
+			set
+			{
+				if ((this._SCHEDULE_ID != value))
+				{
+					this.OnSCHEDULE_IDChanging(value);
+					this.SendPropertyChanging();
+					this._SCHEDULE_ID = value;
+					this.SendPropertyChanged("SCHEDULE_ID");
+					this.OnSCHEDULE_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_ON", DbType="DateTime NOT NULL")]
+		public System.DateTime CREATE_ON
+		{
+			get
+			{
+				return this._CREATE_ON;
+			}
+			set
+			{
+				if ((this._CREATE_ON != value))
+				{
+					this.OnCREATE_ONChanging(value);
+					this.SendPropertyChanging();
+					this._CREATE_ON = value;
+					this.SendPropertyChanged("CREATE_ON");
+					this.OnCREATE_ONChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_BY", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string CREATE_BY
+		{
+			get
+			{
+				return this._CREATE_BY;
+			}
+			set
+			{
+				if ((this._CREATE_BY != value))
+				{
+					this.OnCREATE_BYChanging(value);
+					this.SendPropertyChanging();
+					this._CREATE_BY = value;
+					this.SendPropertyChanged("CREATE_BY");
+					this.OnCREATE_BYChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOTE", DbType="NVarChar(500)")]
+		public string NOTE
+		{
+			get
+			{
+				return this._NOTE;
+			}
+			set
+			{
+				if ((this._NOTE != value))
+				{
+					this.OnNOTEChanging(value);
+					this.SendPropertyChanging();
+					this._NOTE = value;
+					this.SendPropertyChanged("NOTE");
+					this.OnNOTEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LAST_MODIFIED", DbType="DateTime NOT NULL")]
+		public System.DateTime LAST_MODIFIED
+		{
+			get
+			{
+				return this._LAST_MODIFIED;
+			}
+			set
+			{
+				if ((this._LAST_MODIFIED != value))
+				{
+					this.OnLAST_MODIFIEDChanging(value);
+					this.SendPropertyChanging();
+					this._LAST_MODIFIED = value;
+					this.SendPropertyChanged("LAST_MODIFIED");
+					this.OnLAST_MODIFIEDChanged();
 				}
 			}
 		}

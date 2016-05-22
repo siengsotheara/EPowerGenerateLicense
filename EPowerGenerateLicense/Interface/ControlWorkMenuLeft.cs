@@ -25,6 +25,7 @@ namespace EPowerGenerateLicense.Interface
             metroLink2.Enabled = true;
             metroLink1.Enabled = false;
             metroLink3.Enabled = true;
+            metroLink4.Enabled = true;
             parent.ShowWork(null, null);
             GC.Collect();
         }
@@ -34,6 +35,7 @@ namespace EPowerGenerateLicense.Interface
             metroLink3.Enabled = true;
             metroLink2.Enabled = false;
             metroLink1.Enabled = true;
+            metroLink4.Enabled = true;
             parent.ShowSeason(null, null);
             GC.Collect();
         }
@@ -41,7 +43,7 @@ namespace EPowerGenerateLicense.Interface
         private void ControlWorkMenuLeft_Load(object sender, EventArgs e)
         {
             parent = this.ParentForm as FormMain;
-            metroLink1.Enabled = false;
+            metroLink4.Enabled = false;
         }
 
         private void metroLink3_Click(object sender, EventArgs e)
@@ -49,7 +51,17 @@ namespace EPowerGenerateLicense.Interface
             metroLink3.Enabled = false;
             metroLink2.Enabled = true;
             metroLink1.Enabled = true;
+            metroLink4.Enabled = true;
             parent.ShowUser(null, null);
+        }
+
+        private void metroLink4_Click(object sender, EventArgs e)
+        {
+            parent.ShowSurvey(null, null);
+            metroLink1.Enabled = true;
+            metroLink2.Enabled = true;
+            metroLink3.Enabled = true;
+            metroLink4.Enabled = false;
         }
     }
 }

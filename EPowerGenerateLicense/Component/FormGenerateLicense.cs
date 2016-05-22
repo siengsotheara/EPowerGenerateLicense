@@ -98,8 +98,12 @@ namespace EPowerGenerateLicense.Component
                                 TBL_LICENSE_GENERATE lg = new TBL_LICENSE_GENERATE()
                                 {
                                     SCHEDULE_ID = Convert.ToInt32(item),
-                                    CREATE_ON = Convert.ToDateTime(dateTimePickerLicenseGenerate.Value.ToString("yyy-MM-dd")),
-                                    CREATE_BY = cboUser.Text
+                                    CREATE_ON = Convert.ToDateTime(dateTimePickerLicenseGenerate.Value.ToString("yyy-MM-dd hh:mm")),
+                                    CREATE_BY = cboUser.Text,
+                                    NOTE = "-",
+                                    LAST_MODIFIED = DateTime.Now,
+                                    IS_ACTIVE = true
+
                                 };
                                 lgda.SaveLicenseGenerate(lg);
                             }

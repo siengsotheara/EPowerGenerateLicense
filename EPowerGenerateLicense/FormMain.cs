@@ -27,6 +27,7 @@ namespace EPowerGenerateLicense
         private ControlSeason cse = null;
         private ControlLicenseSpecial licenspecial = null;
         private ControlUser user = null;
+        private ControlSurvey survey = null;
         public FormMain()
         {
             InitializeComponent();
@@ -47,7 +48,7 @@ namespace EPowerGenerateLicense
             }
             catch (Exception ex)
             {
-                
+                MessageBox.Show(ex.ToString());
           
             }
         }
@@ -104,10 +105,9 @@ namespace EPowerGenerateLicense
                 reportlicensegenerate.Dock = DockStyle.Fill;
                 panelContainer.Controls.Add(reportlicensegenerate);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                
-                throw;
+                MessageBox.Show(ex.ToString());
             }
         }
         public void ShowReportLicenseAccount(object sender, EventArgs e)
@@ -141,6 +141,20 @@ namespace EPowerGenerateLicense
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+        public void ShowSurvey(object sender, EventArgs e)
+        {
+            try
+            {
+                survey = new ControlSurvey();
+                panelContainer.Controls.Clear();
+                survey.Dock = DockStyle.Fill;
+                panelContainer.Controls.Add(survey);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
             }
         }
         public void ShowSeason(object sender, EventArgs e)
@@ -194,13 +208,12 @@ namespace EPowerGenerateLicense
             btnMenuReport.Enabled = true;
             panelLeft.Controls.Clear();
             panelContainer.Controls.Clear();
-            cw = new ControlWork();
             cwl = new ControlWorkMenuLeft();
-            cw = new ControlWork();
+            survey = new ControlSurvey();
             cwl.Dock = DockStyle.Fill;
-            cw.Dock = DockStyle.Fill;
+            survey.Dock = DockStyle.Fill;
             panelLeft.Controls.Add(cwl);
-            panelContainer.Controls.Add(cw);
+            panelContainer.Controls.Add(survey);
             GC.Collect();
         }
 

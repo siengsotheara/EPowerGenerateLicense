@@ -182,6 +182,7 @@
             // Column5
             // 
             this.Column5.DataPropertyName = "SEASON_NAME";
+            this.Column5.FillWeight = 101.5228F;
             this.Column5.HeaderText = "រដូវកាល";
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
@@ -190,6 +191,7 @@
             // Column10
             // 
             this.Column10.DataPropertyName = "NOTE";
+            this.Column10.FillWeight = 154.2595F;
             this.Column10.HeaderText = "សំគាល់";
             this.Column10.Name = "Column10";
             this.Column10.ReadOnly = true;
@@ -198,6 +200,7 @@
             // Column3
             // 
             this.Column3.DataPropertyName = "CREATE_DATE";
+            this.Column3.FillWeight = 91.92624F;
             this.Column3.HeaderText = "ធ្វើនៅ";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
@@ -206,6 +209,7 @@
             // Column1
             // 
             this.Column1.DataPropertyName = "CREATE_BY";
+            this.Column1.FillWeight = 52.29137F;
             this.Column1.HeaderText = "ដោយ";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
@@ -224,6 +228,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.dataGridViewSeason);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);

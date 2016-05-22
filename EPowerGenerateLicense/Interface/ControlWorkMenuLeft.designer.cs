@@ -33,6 +33,7 @@
             this.metroLink1 = new MetroFramework.Controls.MetroLink();
             this.metroLink2 = new MetroFramework.Controls.MetroLink();
             this.metroLink3 = new MetroFramework.Controls.MetroLink();
+            this.metroLink4 = new MetroFramework.Controls.MetroLink();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +66,7 @@
             this.metroLink1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroLink1.Image = global::EPowerGenerateLicense.Properties.Resources.arrow_icon_left;
             this.metroLink1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.metroLink1.Location = new System.Drawing.Point(3, 30);
+            this.metroLink1.Location = new System.Drawing.Point(3, 54);
             this.metroLink1.Name = "metroLink1";
             this.metroLink1.Size = new System.Drawing.Size(200, 23);
             this.metroLink1.TabIndex = 3;
@@ -79,7 +80,7 @@
             this.metroLink2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroLink2.Image = global::EPowerGenerateLicense.Properties.Resources.arrow_icon_left;
             this.metroLink2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.metroLink2.Location = new System.Drawing.Point(3, 54);
+            this.metroLink2.Location = new System.Drawing.Point(3, 78);
             this.metroLink2.Name = "metroLink2";
             this.metroLink2.Size = new System.Drawing.Size(200, 23);
             this.metroLink2.TabIndex = 4;
@@ -93,7 +94,7 @@
             this.metroLink3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroLink3.Image = global::EPowerGenerateLicense.Properties.Resources.arrow_icon_left;
             this.metroLink3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.metroLink3.Location = new System.Drawing.Point(3, 78);
+            this.metroLink3.Location = new System.Drawing.Point(3, 102);
             this.metroLink3.Name = "metroLink3";
             this.metroLink3.Size = new System.Drawing.Size(200, 23);
             this.metroLink3.TabIndex = 5;
@@ -102,11 +103,26 @@
             this.metroLink3.UseSelectable = true;
             this.metroLink3.Click += new System.EventHandler(this.metroLink3_Click);
             // 
+            // metroLink4
+            // 
+            this.metroLink4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroLink4.Image = global::EPowerGenerateLicense.Properties.Resources.arrow_icon_left;
+            this.metroLink4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.metroLink4.Location = new System.Drawing.Point(3, 30);
+            this.metroLink4.Name = "metroLink4";
+            this.metroLink4.Size = new System.Drawing.Size(200, 23);
+            this.metroLink4.TabIndex = 6;
+            this.metroLink4.Text = "ការស្ទង់មត្តិ(Survey)";
+            this.metroLink4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.metroLink4.UseSelectable = true;
+            this.metroLink4.Click += new System.EventHandler(this.metroLink4_Click);
+            // 
             // ControlWorkMenuLeft
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Controls.Add(this.metroLink4);
             this.Controls.Add(this.metroLink3);
             this.Controls.Add(this.metroLink2);
             this.Controls.Add(this.metroLink1);
@@ -127,6 +143,7 @@
         private MetroFramework.Controls.MetroLink metroLink2;
         public MetroFramework.Controls.MetroLink metroLink1;
         private MetroFramework.Controls.MetroLink metroLink3;
+        public MetroFramework.Controls.MetroLink metroLink4;
 
     }
 }
