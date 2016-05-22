@@ -7,53 +7,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MetroFramework.Forms;
 using EPowerGenerateLicense.Model;
 using EPowerGenerateLicense.Interface;
+using MetroFramework.Forms;
 
 namespace EPowerGenerateLicense.Component
 {
-    public partial class FormLicenseAvailableBySeason : MetroForm
+    public partial class FormLicenseAvailableByCreateOn : MetroForm
     {
-        public FormLicenseAvailableBySeason()
+        public FormLicenseAvailableByCreateOn()
         {
             InitializeComponent();
         }
-        
-        private void FormLicenseAvailableBySeason_Load(object sender, EventArgs e)
+
+        private void FormLicenseAvailableByCreateOn_Load(object sender, EventArgs e)
         {
-            try
+            lblHeader.Text = ControlSurvey.SEASON_NAME;
+            lblDate.Text = Convert.ToString(ControlSurvey.DATE);
+            lblBy.Text = ControlSurvey.BY;
+             using (TBL_LICENSE_GENERATE_DATA_ACCESS lgda = new TBL_LICENSE_GENERATE_DATA_ACCESS())
             {
-                using (TBL_LICENSE_DATA_ACCESS lda = new TBL_LICENSE_DATA_ACCESS())
-                {
-                    dataGridViewLicense.DataSource = lda.DisplayAvailableLicenseBySeasonID(ControlWork.SEASON_ID);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
+                dataGridViewFollowUP.DataSource = lgda.ShowLicenseByCreateOn(ControlSurvey.DATE);
             }
         }
 
-        private void dataGridViewLicense_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        private void dataGridViewFollowUP_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            if (e.RowIndex % 2 == 0)
+            int index = 10;  // COLOR_ID
+            foreach (DataGridViewRow row in dataGridViewFollowUP.Rows)
             {
-                dataGridViewLicense.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.WhiteSmoke;
-            }
-        }
-
-        private void dataGridViewLicense_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
-        {
-            int index = 5;  // COLOR_ID
-            foreach (DataGridViewRow row in dataGridViewLicense.Rows)
-            {
-                if (row.Cells[index].Value == null)
-                {
-                    row.DefaultCellStyle.ForeColor = Color.Black;
-                    row.DefaultCellStyle.SelectionForeColor = Color.Black;
-                }
-                else if ((int)row.Cells[index].Value == 1)
+                if ((int)row.Cells[index].Value == 1)
                 {
                     row.DefaultCellStyle.ForeColor = Color.Red;
                     row.DefaultCellStyle.SelectionForeColor = Color.Red;
@@ -81,9 +64,13 @@ namespace EPowerGenerateLicense.Component
             }
         }
 
-        private void dataGridViewLicense_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        private void dataGridViewFollowUP_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
         {
-            dataGridViewLicense.ClearSelection();
+            if (e.RowIndex % 2 == 0)
+            {
+                dataGridViewFollowUP.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+            }
+            GC.Collect();
         }
     }
 }

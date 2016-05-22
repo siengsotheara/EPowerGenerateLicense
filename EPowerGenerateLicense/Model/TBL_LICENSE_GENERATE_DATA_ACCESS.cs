@@ -18,6 +18,12 @@ namespace EPowerGenerateLicense.Model
 
         }
 
+        public List<RUN_SHOW_GENERATE_BY_CREATE_ONResult> ShowLicenseByCreateOn(DateTime DATE)
+        {
+            _context = new LicenseDataContext();
+            var result = _context.RUN_SHOW_GENERATE_BY_CREATE_ON(DATE);
+            return result.ToList();
+        }
         public void SaveLicenseGenerate(TBL_LICENSE_GENERATE lg)
         {
             using (_context = new LicenseDataContext())

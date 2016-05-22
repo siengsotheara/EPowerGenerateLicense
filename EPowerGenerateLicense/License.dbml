@@ -97,4 +97,35 @@
       <Column Name="REMAIN_LICENSE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
+  <Function Name="dbo.RUN_SHOW_NUMBER_AVAILABLE" Method="RUN_SHOW_NUMBER_AVAILABLE">
+    <Parameter Name="SEASOND_ID" Parameter="sEASOND_ID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="RUN_SHOW_NUMBER_AVAILABLEResult">
+      <Column Name="REMAIN_LICENSE" Type="System.String" DbType="NVarChar(35)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.RUN_SHOW_HISTORY_SURVEY" Method="RUN_SHOW_HISTORY_SURVEY">
+    <Parameter Name="SEASON_ID" Parameter="sEASON_ID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="RUN_SHOW_HISTORY_SURVEYResult">
+      <Column Name="ROW_ID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CREATE_ON" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="TOTAL_LICENSE" Type="System.String" DbType="NVarChar(34)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.RUN_SHOW_GENERATE_BY_CREATE_ON" Method="RUN_SHOW_GENERATE_BY_CREATE_ON">
+    <Parameter Name="CREATE_ON" Parameter="cREATE_ON" Type="System.DateTime" DbType="DateTime" />
+    <ElementType Name="RUN_SHOW_GENERATE_BY_CREATE_ONResult">
+      <Column Name="LICENSE_GENERATE_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SCHEDULE_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_ON" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CREATE_BY" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="FOLLOW_UP_BY" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NOTE" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="LICENSE_NUMBER" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ACCOUNT_NAME" Type="System.String" DbType="NVarChar(201) NOT NULL" CanBeNull="false" />
+      <Column Name="CONTACT_NAME" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IS_ACTIVE" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="COLOR_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
 </Database>

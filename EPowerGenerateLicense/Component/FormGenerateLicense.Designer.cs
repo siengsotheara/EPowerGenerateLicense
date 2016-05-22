@@ -42,6 +42,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.cboUser = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.cboFollowUpBy = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -143,7 +146,7 @@
             // btnClose
             // 
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Location = new System.Drawing.Point(339, 221);
+            this.btnClose.Location = new System.Drawing.Point(339, 244);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 5;
@@ -154,7 +157,7 @@
             // btnGenerate
             // 
             this.btnGenerate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGenerate.Location = new System.Drawing.Point(258, 221);
+            this.btnGenerate.Location = new System.Drawing.Point(258, 244);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(75, 23);
             this.btnGenerate.TabIndex = 4;
@@ -205,11 +208,57 @@
             this.label8.TabIndex = 11;
             this.label8.Text = "ដោយ";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(26, 211);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(79, 22);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Follow Up by";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(173, 211);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(16, 22);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "៖";
+            // 
+            // cboFollowUpBy
+            // 
+            this.cboFollowUpBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboFollowUpBy.FormattingEnabled = true;
+            this.cboFollowUpBy.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"});
+            this.cboFollowUpBy.Location = new System.Drawing.Point(191, 208);
+            this.cboFollowUpBy.Name = "cboFollowUpBy";
+            this.cboFollowUpBy.Size = new System.Drawing.Size(223, 30);
+            this.cboFollowUpBy.TabIndex = 16;
+            // 
             // FormGenerateLicense
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 257);
+            this.ClientSize = new System.Drawing.Size(428, 276);
+            this.Controls.Add(this.cboFollowUpBy);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cboUser);
             this.Controls.Add(this.label8);
@@ -257,5 +306,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cboUser;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cboFollowUpBy;
     }
 }

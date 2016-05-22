@@ -107,6 +107,7 @@
             this.dataGridViewLicense.AllowUserToResizeColumns = false;
             this.dataGridViewLicense.AllowUserToResizeRows = false;
             this.dataGridViewLicense.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewLicense.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewLicense.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewLicense.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewLicense.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -279,7 +280,7 @@
             this.txtSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtSearch.CustomButton.UseSelectable = true;
             this.txtSearch.Lines = new string[0];
-            this.txtSearch.Location = new System.Drawing.Point(0, 31);
+            this.txtSearch.Location = new System.Drawing.Point(2, 31);
             this.txtSearch.MaxLength = 32767;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';

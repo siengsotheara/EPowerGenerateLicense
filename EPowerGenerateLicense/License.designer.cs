@@ -174,6 +174,27 @@ namespace EPowerGenerateLicense
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
 			return ((ISingleResult<RUN_SHOW_ALL_SEASONResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.RUN_SHOW_NUMBER_AVAILABLE")]
+		public ISingleResult<RUN_SHOW_NUMBER_AVAILABLEResult> RUN_SHOW_NUMBER_AVAILABLE([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SEASOND_ID", DbType="Int")] System.Nullable<int> sEASOND_ID)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), sEASOND_ID);
+			return ((ISingleResult<RUN_SHOW_NUMBER_AVAILABLEResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.RUN_SHOW_HISTORY_SURVEY")]
+		public ISingleResult<RUN_SHOW_HISTORY_SURVEYResult> RUN_SHOW_HISTORY_SURVEY([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SEASON_ID", DbType="Int")] System.Nullable<int> sEASON_ID)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), sEASON_ID);
+			return ((ISingleResult<RUN_SHOW_HISTORY_SURVEYResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.RUN_SHOW_GENERATE_BY_CREATE_ON")]
+		public ISingleResult<RUN_SHOW_GENERATE_BY_CREATE_ONResult> RUN_SHOW_GENERATE_BY_CREATE_ON([global::System.Data.Linq.Mapping.ParameterAttribute(Name="CREATE_ON", DbType="DateTime")] System.Nullable<System.DateTime> cREATE_ON)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), cREATE_ON);
+			return ((ISingleResult<RUN_SHOW_GENERATE_BY_CREATE_ONResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TBL_COLOR_LICENSE")]
@@ -1759,6 +1780,318 @@ namespace EPowerGenerateLicense
 				if ((this._REMAIN_LICENSE != value))
 				{
 					this._REMAIN_LICENSE = value;
+				}
+			}
+		}
+	}
+	
+	public partial class RUN_SHOW_NUMBER_AVAILABLEResult
+	{
+		
+		private string _REMAIN_LICENSE;
+		
+		public RUN_SHOW_NUMBER_AVAILABLEResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_REMAIN_LICENSE", DbType="NVarChar(35)")]
+		public string REMAIN_LICENSE
+		{
+			get
+			{
+				return this._REMAIN_LICENSE;
+			}
+			set
+			{
+				if ((this._REMAIN_LICENSE != value))
+				{
+					this._REMAIN_LICENSE = value;
+				}
+			}
+		}
+	}
+	
+	public partial class RUN_SHOW_HISTORY_SURVEYResult
+	{
+		
+		private System.Nullable<long> _ROW_ID;
+		
+		private System.DateTime _CREATE_ON;
+		
+		private string _CREATE_BY;
+		
+		private string _TOTAL_LICENSE;
+		
+		public RUN_SHOW_HISTORY_SURVEYResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ROW_ID", DbType="BigInt")]
+		public System.Nullable<long> ROW_ID
+		{
+			get
+			{
+				return this._ROW_ID;
+			}
+			set
+			{
+				if ((this._ROW_ID != value))
+				{
+					this._ROW_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_ON", DbType="DateTime NOT NULL")]
+		public System.DateTime CREATE_ON
+		{
+			get
+			{
+				return this._CREATE_ON;
+			}
+			set
+			{
+				if ((this._CREATE_ON != value))
+				{
+					this._CREATE_ON = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_BY", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string CREATE_BY
+		{
+			get
+			{
+				return this._CREATE_BY;
+			}
+			set
+			{
+				if ((this._CREATE_BY != value))
+				{
+					this._CREATE_BY = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TOTAL_LICENSE", DbType="NVarChar(34)")]
+		public string TOTAL_LICENSE
+		{
+			get
+			{
+				return this._TOTAL_LICENSE;
+			}
+			set
+			{
+				if ((this._TOTAL_LICENSE != value))
+				{
+					this._TOTAL_LICENSE = value;
+				}
+			}
+		}
+	}
+	
+	public partial class RUN_SHOW_GENERATE_BY_CREATE_ONResult
+	{
+		
+		private int _LICENSE_GENERATE_ID;
+		
+		private int _SCHEDULE_ID;
+		
+		private System.DateTime _CREATE_ON;
+		
+		private string _CREATE_BY;
+		
+		private string _FOLLOW_UP_BY;
+		
+		private string _NOTE;
+		
+		private string _LICENSE_NUMBER;
+		
+		private string _ACCOUNT_NAME;
+		
+		private string _CONTACT_NAME;
+		
+		private bool _IS_ACTIVE;
+		
+		private int _COLOR_ID;
+		
+		public RUN_SHOW_GENERATE_BY_CREATE_ONResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LICENSE_GENERATE_ID", DbType="Int NOT NULL")]
+		public int LICENSE_GENERATE_ID
+		{
+			get
+			{
+				return this._LICENSE_GENERATE_ID;
+			}
+			set
+			{
+				if ((this._LICENSE_GENERATE_ID != value))
+				{
+					this._LICENSE_GENERATE_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SCHEDULE_ID", DbType="Int NOT NULL")]
+		public int SCHEDULE_ID
+		{
+			get
+			{
+				return this._SCHEDULE_ID;
+			}
+			set
+			{
+				if ((this._SCHEDULE_ID != value))
+				{
+					this._SCHEDULE_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_ON", DbType="DateTime NOT NULL")]
+		public System.DateTime CREATE_ON
+		{
+			get
+			{
+				return this._CREATE_ON;
+			}
+			set
+			{
+				if ((this._CREATE_ON != value))
+				{
+					this._CREATE_ON = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_BY", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string CREATE_BY
+		{
+			get
+			{
+				return this._CREATE_BY;
+			}
+			set
+			{
+				if ((this._CREATE_BY != value))
+				{
+					this._CREATE_BY = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FOLLOW_UP_BY", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string FOLLOW_UP_BY
+		{
+			get
+			{
+				return this._FOLLOW_UP_BY;
+			}
+			set
+			{
+				if ((this._FOLLOW_UP_BY != value))
+				{
+					this._FOLLOW_UP_BY = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOTE", DbType="NVarChar(500) NOT NULL", CanBeNull=false)]
+		public string NOTE
+		{
+			get
+			{
+				return this._NOTE;
+			}
+			set
+			{
+				if ((this._NOTE != value))
+				{
+					this._NOTE = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LICENSE_NUMBER", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
+		public string LICENSE_NUMBER
+		{
+			get
+			{
+				return this._LICENSE_NUMBER;
+			}
+			set
+			{
+				if ((this._LICENSE_NUMBER != value))
+				{
+					this._LICENSE_NUMBER = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ACCOUNT_NAME", DbType="NVarChar(201) NOT NULL", CanBeNull=false)]
+		public string ACCOUNT_NAME
+		{
+			get
+			{
+				return this._ACCOUNT_NAME;
+			}
+			set
+			{
+				if ((this._ACCOUNT_NAME != value))
+				{
+					this._ACCOUNT_NAME = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CONTACT_NAME", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string CONTACT_NAME
+		{
+			get
+			{
+				return this._CONTACT_NAME;
+			}
+			set
+			{
+				if ((this._CONTACT_NAME != value))
+				{
+					this._CONTACT_NAME = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IS_ACTIVE", DbType="Bit NOT NULL")]
+		public bool IS_ACTIVE
+		{
+			get
+			{
+				return this._IS_ACTIVE;
+			}
+			set
+			{
+				if ((this._IS_ACTIVE != value))
+				{
+					this._IS_ACTIVE = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_COLOR_ID", DbType="Int NOT NULL")]
+		public int COLOR_ID
+		{
+			get
+			{
+				return this._COLOR_ID;
+			}
+			set
+			{
+				if ((this._COLOR_ID != value))
+				{
+					this._COLOR_ID = value;
 				}
 			}
 		}

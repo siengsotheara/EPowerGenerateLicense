@@ -16,6 +16,18 @@ namespace EPowerGenerateLicense.Model
         {
 
         }
+        public List<RUN_SHOW_HISTORY_SURVEYResult> ShowSurvey(int SEASON_ID)
+        {
+            _context = new LicenseDataContext();
+            var result = _context.RUN_SHOW_HISTORY_SURVEY(SEASON_ID);
+            return result.ToList();
+        }
+        public List<RUN_SHOW_NUMBER_AVAILABLEResult> ShowSeason(int SEASON_ID)
+        {
+            _context = new LicenseDataContext();
+            var result = _context.RUN_SHOW_NUMBER_AVAILABLE(SEASON_ID);
+            return result.ToList();
+        }
         public IQueryable<TBL_SEASON> ShowAllSeasonIncludeInactive()
         {
             _context = new LicenseDataContext();

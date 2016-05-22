@@ -165,9 +165,7 @@
             this.dataGridViewUser.RowHeadersVisible = false;
             this.dataGridViewUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewUser.Size = new System.Drawing.Size(1135, 431);
-            this.dataGridViewUser.TabIndex = 3;
-            this.dataGridViewUser.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridViewUser_CellFormatting);
-            this.dataGridViewUser.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dataGridViewUser_RowPrePaint);
+            this.dataGridViewUser.TabIndex = 4;
             // 
             // Column1
             // 

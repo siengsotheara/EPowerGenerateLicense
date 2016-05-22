@@ -182,3 +182,5 @@ D:\EPower CCL\EPowerGenerateLicense\EPowerGenerateLicense\obj\Release\EPowerGene
 D:\EPower CCL\EPowerGenerateLicense\EPowerGenerateLicense\obj\Release\EPowerGenerateLicense.Interface.ControlLicenseMenuLeft.km-KH.resources
 D:\EPower CCL\EPowerGenerateLicense\EPowerGenerateLicense\obj\Release\EPowerGenerateLicense.csproj.GenerateResource.Cache
 D:\EPower CCL\EPowerGenerateLicense\EPowerGenerateLicense\obj\Release\km-KH\EPowerGenerateLicense.resources.dll
+D:\EPower CCL\EPowerGenerateLicense\EPowerGenerateLicense\obj\Release\EPowerGenerateLicense.Interface.ControlSurvey.resources
+D:\EPower CCL\EPowerGenerateLicense\EPowerGenerateLicense\obj\Release\EPowerGenerateLicense.Component.FormLicenseAvailableByCreateOn.resources

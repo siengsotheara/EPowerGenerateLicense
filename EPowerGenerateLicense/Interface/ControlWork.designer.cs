@@ -193,10 +193,9 @@
             this.dataGridViewGenerate.RowHeadersVisible = false;
             this.dataGridViewGenerate.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewGenerate.Size = new System.Drawing.Size(1133, 431);
-            this.dataGridViewGenerate.TabIndex = 0;
+            this.dataGridViewGenerate.TabIndex = 1;
             this.dataGridViewGenerate.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewGenerate_CellContentClick);
             this.dataGridViewGenerate.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridViewGenerate_CellFormatting);
-            this.dataGridViewGenerate.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dataGridViewGenerate_DataBindingComplete);
             this.dataGridViewGenerate.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dataGridViewGenerate_RowPrePaint);
             // 
             // Column8
@@ -286,10 +285,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel3;
         private MetroFramework.Controls.MetroButton btnGenerate;
         private MetroFramework.Controls.MetroCheckBox ckShowAllSeason;
         public System.Windows.Forms.ComboBox cboSeason;
+        private System.Windows.Forms.Panel panel3;
         public System.Windows.Forms.DataGridView dataGridViewGenerate;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;

@@ -104,6 +104,12 @@
     <Compile Include="Component\FormEditSpecialLicense.Designer.cs">
       <DependentUpon>FormEditSpecialLicense.cs</DependentUpon>
     </Compile>
+    <Compile Include="Component\FormLicenseAvailableByCreateOn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\FormLicenseAvailableByCreateOn.Designer.cs">
+      <DependentUpon>FormLicenseAvailableByCreateOn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Component\FormLicenseAvailableBySeason.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -249,6 +255,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Component\FormEditSpecialLicense.resx">
       <DependentUpon>FormEditSpecialLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\FormLicenseAvailableByCreateOn.resx">
+      <DependentUpon>FormLicenseAvailableByCreateOn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Component\FormLicenseAvailableBySeason.resx">
       <DependentUpon>FormLicenseAvailableBySeason.cs</DependentUpon>
