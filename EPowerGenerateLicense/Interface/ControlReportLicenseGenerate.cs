@@ -91,6 +91,8 @@ namespace EPowerGenerateLicense.Interface
                     crxReport.ParameterFields.GetItemByName("@SEASON_NAME", Missing.Value).AddCurrentValue(cboSeason.GetItemText(cboSeason.SelectedItem));
                     crxReport.ParameterFields.GetItemByName("@SEASON_ID", Missing.Value).AddCurrentValue(Convert.ToInt32(cboSeason.SelectedValue));
                     crxReport.ParameterFields.GetItemByName("@DATE", Missing.Value).AddCurrentValue(dt);
+                    crxReport.PaperSize = CRAXDDRT.CRPaperSize.crPaperA4;
+                    crxReport.PaperOrientation = CRAXDDRT.CRPaperOrientation.crLandscape;
                     axCrystalActiveXReportViewer1.ReportSource = crxReport;
                     axCrystalActiveXReportViewer1.ViewReport();
                     axCrystalActiveXReportViewer1.Zoom(100);
@@ -118,6 +120,8 @@ namespace EPowerGenerateLicense.Interface
                     
                     crxReport.ParameterFields.GetItemByName("@MONTH", Missing.Value).AddCurrentValue(dateTimePicker.Value.Month);
                     crxReport.ParameterFields.GetItemByName("@YEAR", Missing.Value).AddCurrentValue(dateTimePicker.Value.Year);
+                    crxReport.PaperSize = CRAXDDRT.CRPaperSize.crPaperA4;
+                    crxReport.PaperOrientation = CRAXDDRT.CRPaperOrientation.crLandscape;
                     axCrystalActiveXReportViewer1.ReportSource = crxReport;
                     axCrystalActiveXReportViewer1.ViewReport();
                     axCrystalActiveXReportViewer1.Zoom(100);

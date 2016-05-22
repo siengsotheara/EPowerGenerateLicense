@@ -19,11 +19,11 @@ namespace EPowerGenerateLicense.Component
         {
             InitializeComponent();
         }
-
+        private LicenseDataContext _context = null;
         private void FormLicenseAvailableByCreateOn_Load(object sender, EventArgs e)
         {
             lblHeader.Text = ControlSurvey.SEASON_NAME;
-            lblDate.Text = Convert.ToString(ControlSurvey.DATE);
+            lblDate.Text = ControlSurvey.DATE.ToLongDateString() + " " + ControlSurvey.DATE.ToShortTimeString();
             lblBy.Text = ControlSurvey.BY;
              using (TBL_LICENSE_GENERATE_DATA_ACCESS lgda = new TBL_LICENSE_GENERATE_DATA_ACCESS())
             {
@@ -71,6 +71,54 @@ namespace EPowerGenerateLicense.Component
                 dataGridViewFollowUP.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.WhiteSmoke;
             }
             GC.Collect();
+        }
+
+        private void dataGridViewFollowUP_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = this.dataGridViewFollowUP.Rows[e.RowIndex];
+ //        var dialog = MessageBox.Show(this, "Are you sure to change this?", "", MessageBoxButtons.OKCancel);
+            
+                if (row != null)
+                {
+                    try
+                    {
+                        int license_generate_id = Convert.ToInt32(row.Cells["LICENSE_GENERATE_ID"].Value);
+                        string note;
+                        // MessageBox.Show(row.Cells["CREATE_BY"].Value.ToString());
+                        if (row.Cells["NOTE"].Value == null)
+                        {
+                            note = "";
+                            //MessageBox.Show("NullExpection");
+                        }
+                        else
+                        {
+                            note = row.Cells["NOTE"].Value.ToString();
+                        }
+                        //MessageBox.Show(license_generate_id.ToString());
+                        using (_context = new LicenseDataContext())
+                        {
+                            TBL_LICENSE_GENERATE lg = (from l in _context.TBL_LICENSE_GENERATEs
+                                                       where l.LICENSE_GENERATE_ID == license_generate_id
+                                                       select l).FirstOrDefault();
+                            lg.NOTE = note;
+                            lg.LAST_MODIFIED = DateTime.Now;
+                            lg.FOLLOW_UP_BY = row.Cells["FOLLOW_UP_BY"].Value.ToString();
+                            _context.SubmitChanges();
+                        };
+                            
+                        
+                    }
+                    catch (Exception exception)
+                    {
+                        MessageBox.Show(exception.ToString());
+                    }
+                }
+            
+        }
+
+        private void FormLicenseAvailableByCreateOn_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
         }
     }
 }

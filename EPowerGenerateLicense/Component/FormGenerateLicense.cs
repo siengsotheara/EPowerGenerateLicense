@@ -31,6 +31,7 @@ namespace EPowerGenerateLicense.Component
                 parent = this.ParentForm as FormMain;
                 cboTake.SelectedIndex = 9;
                 cboUser.SelectedIndex = 0;
+                cboFollowUpBy.SelectedIndex = 0;
                 dateTimePickerLicenseGenerate.MinDate = DateTime.Today;
                 using (TBL_SEASON_DATA_ACCESS sda = new TBL_SEASON_DATA_ACCESS())
                 {
@@ -46,12 +47,15 @@ namespace EPowerGenerateLicense.Component
                     cboUser.DataSource = uda.ShowUserActive();
                     cboUser.DisplayMember = "USERNAME";
                     cboUser.ValueMember = "USER_ID";
+                    cboFollowUpBy.DataSource = uda.ShowUserActive();
+                    cboFollowUpBy.DisplayMember = "USERNAME";
+                    cboFollowUpBy.ValueMember = "USER_ID";
                 }
                 GC.Collect();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
             }
         }
         FormMain parent;
@@ -101,9 +105,9 @@ namespace EPowerGenerateLicense.Component
                                     CREATE_ON = Convert.ToDateTime(dateTimePickerLicenseGenerate.Value.ToString("yyy-MM-dd hh:mm")),
                                     CREATE_BY = cboUser.Text,
                                     NOTE = "-",
+                                    FOLLOW_UP_BY = cboFollowUpBy.Text,
                                     LAST_MODIFIED = DateTime.Now,
                                     IS_ACTIVE = true
-
                                 };
                                 lgda.SaveLicenseGenerate(lg);
                             }

@@ -213,9 +213,9 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(26, 211);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(79, 22);
+            this.label9.Size = new System.Drawing.Size(84, 22);
             this.label9.TabIndex = 14;
-            this.label9.Text = "Follow Up by";
+            this.label9.Text = "អ្នក Follow Up";
             // 
             // label10
             // 

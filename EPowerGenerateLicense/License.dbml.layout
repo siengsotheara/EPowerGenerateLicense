@@ -50,10 +50,10 @@
         <elementListCompartment Id="992ec225-202c-4e5b-98bb-54898a5107cd" absoluteBounds="5.0150000000000006, 2.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="e37fed36-dec3-44d8-b6e5-950174d3512f" absoluteBounds="0.5, 0.5, 2, 2.1554996744791666">
+    <classShape Id="e139e04a-f60d-44d1-956f-45ddcc018684" absoluteBounds="0.5, 0.5, 2, 2.3478011067708335">
       <DataClassMoniker Name="/LicenseDataContext/TBL_LICENSE_GENERATE" />
       <nestedChildShapes>
-        <elementListCompartment Id="8ff283fa-db6f-42c4-880d-0fdd12b3efa9" absoluteBounds="0.51499999999999968, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="989466a5-d2cd-439e-ad6b-bc353bcca96a" absoluteBounds="0.51499999999999968, 0.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

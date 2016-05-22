@@ -182,18 +182,18 @@ namespace EPowerGenerateLicense
 			return ((ISingleResult<RUN_SHOW_NUMBER_AVAILABLEResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.RUN_SHOW_HISTORY_SURVEY")]
-		public ISingleResult<RUN_SHOW_HISTORY_SURVEYResult> RUN_SHOW_HISTORY_SURVEY([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SEASON_ID", DbType="Int")] System.Nullable<int> sEASON_ID)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), sEASON_ID);
-			return ((ISingleResult<RUN_SHOW_HISTORY_SURVEYResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.RUN_SHOW_GENERATE_BY_CREATE_ON")]
 		public ISingleResult<RUN_SHOW_GENERATE_BY_CREATE_ONResult> RUN_SHOW_GENERATE_BY_CREATE_ON([global::System.Data.Linq.Mapping.ParameterAttribute(Name="CREATE_ON", DbType="DateTime")] System.Nullable<System.DateTime> cREATE_ON)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), cREATE_ON);
 			return ((ISingleResult<RUN_SHOW_GENERATE_BY_CREATE_ONResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.RUN_SHOW_HISTORY_SURVEY")]
+		public ISingleResult<RUN_SHOW_HISTORY_SURVEYResult> RUN_SHOW_HISTORY_SURVEY([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SEASON_ID", DbType="Int")] System.Nullable<int> sEASON_ID)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), sEASON_ID);
+			return ((ISingleResult<RUN_SHOW_HISTORY_SURVEYResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -1455,6 +1455,8 @@ namespace EPowerGenerateLicense
 		
 		private System.DateTime _LAST_MODIFIED;
 		
+		private string _FOLLOW_UP_BY;
+		
 		private bool _IS_ACTIVE;
 		
     #region Extensibility Method Definitions
@@ -1473,6 +1475,8 @@ namespace EPowerGenerateLicense
     partial void OnNOTEChanged();
     partial void OnLAST_MODIFIEDChanging(System.DateTime value);
     partial void OnLAST_MODIFIEDChanged();
+    partial void OnFOLLOW_UP_BYChanging(string value);
+    partial void OnFOLLOW_UP_BYChanged();
     partial void OnIS_ACTIVEChanging(bool value);
     partial void OnIS_ACTIVEChanged();
     #endregion
@@ -1562,7 +1566,7 @@ namespace EPowerGenerateLicense
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOTE", DbType="NVarChar(500)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOTE", DbType="NVarChar(500) NOT NULL", CanBeNull=false)]
 		public string NOTE
 		{
 			get
@@ -1598,6 +1602,26 @@ namespace EPowerGenerateLicense
 					this._LAST_MODIFIED = value;
 					this.SendPropertyChanged("LAST_MODIFIED");
 					this.OnLAST_MODIFIEDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FOLLOW_UP_BY", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string FOLLOW_UP_BY
+		{
+			get
+			{
+				return this._FOLLOW_UP_BY;
+			}
+			set
+			{
+				if ((this._FOLLOW_UP_BY != value))
+				{
+					this.OnFOLLOW_UP_BYChanging(value);
+					this.SendPropertyChanging();
+					this._FOLLOW_UP_BY = value;
+					this.SendPropertyChanged("FOLLOW_UP_BY");
+					this.OnFOLLOW_UP_BYChanged();
 				}
 			}
 		}
@@ -1811,86 +1835,6 @@ namespace EPowerGenerateLicense
 		}
 	}
 	
-	public partial class RUN_SHOW_HISTORY_SURVEYResult
-	{
-		
-		private System.Nullable<long> _ROW_ID;
-		
-		private System.DateTime _CREATE_ON;
-		
-		private string _CREATE_BY;
-		
-		private string _TOTAL_LICENSE;
-		
-		public RUN_SHOW_HISTORY_SURVEYResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ROW_ID", DbType="BigInt")]
-		public System.Nullable<long> ROW_ID
-		{
-			get
-			{
-				return this._ROW_ID;
-			}
-			set
-			{
-				if ((this._ROW_ID != value))
-				{
-					this._ROW_ID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_ON", DbType="DateTime NOT NULL")]
-		public System.DateTime CREATE_ON
-		{
-			get
-			{
-				return this._CREATE_ON;
-			}
-			set
-			{
-				if ((this._CREATE_ON != value))
-				{
-					this._CREATE_ON = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_BY", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
-		public string CREATE_BY
-		{
-			get
-			{
-				return this._CREATE_BY;
-			}
-			set
-			{
-				if ((this._CREATE_BY != value))
-				{
-					this._CREATE_BY = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TOTAL_LICENSE", DbType="NVarChar(34)")]
-		public string TOTAL_LICENSE
-		{
-			get
-			{
-				return this._TOTAL_LICENSE;
-			}
-			set
-			{
-				if ((this._TOTAL_LICENSE != value))
-				{
-					this._TOTAL_LICENSE = value;
-				}
-			}
-		}
-	}
-	
 	public partial class RUN_SHOW_GENERATE_BY_CREATE_ONResult
 	{
 		
@@ -2092,6 +2036,104 @@ namespace EPowerGenerateLicense
 				if ((this._COLOR_ID != value))
 				{
 					this._COLOR_ID = value;
+				}
+			}
+		}
+	}
+	
+	public partial class RUN_SHOW_HISTORY_SURVEYResult
+	{
+		
+		private System.Nullable<long> _ROW_ID;
+		
+		private System.DateTime _CREATE_ON;
+		
+		private string _FOLLOW_UP_BY;
+		
+		private string _CREATE_BY;
+		
+		private string _TOTAL_LICENSE;
+		
+		public RUN_SHOW_HISTORY_SURVEYResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ROW_ID", DbType="BigInt")]
+		public System.Nullable<long> ROW_ID
+		{
+			get
+			{
+				return this._ROW_ID;
+			}
+			set
+			{
+				if ((this._ROW_ID != value))
+				{
+					this._ROW_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_ON", DbType="DateTime NOT NULL")]
+		public System.DateTime CREATE_ON
+		{
+			get
+			{
+				return this._CREATE_ON;
+			}
+			set
+			{
+				if ((this._CREATE_ON != value))
+				{
+					this._CREATE_ON = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FOLLOW_UP_BY", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string FOLLOW_UP_BY
+		{
+			get
+			{
+				return this._FOLLOW_UP_BY;
+			}
+			set
+			{
+				if ((this._FOLLOW_UP_BY != value))
+				{
+					this._FOLLOW_UP_BY = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_BY", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string CREATE_BY
+		{
+			get
+			{
+				return this._CREATE_BY;
+			}
+			set
+			{
+				if ((this._CREATE_BY != value))
+				{
+					this._CREATE_BY = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TOTAL_LICENSE", DbType="NVarChar(34)")]
+		public string TOTAL_LICENSE
+		{
+			get
+			{
+				return this._TOTAL_LICENSE;
+			}
+			set
+			{
+				if ((this._TOTAL_LICENSE != value))
+				{
+					this._TOTAL_LICENSE = value;
 				}
 			}
 		}

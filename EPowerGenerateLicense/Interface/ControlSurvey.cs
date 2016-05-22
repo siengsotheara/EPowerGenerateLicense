@@ -25,7 +25,7 @@ namespace EPowerGenerateLicense.Interface
         private TBL_SEASON_DATA_ACCESS sda = null;
         private void lblRemainNumber_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            MessageBox.Show(lblRemainNumber.Text.ToString());
+            //MessageBox.Show(lblRemainNumber.Text.ToString());
         }
 
         private void ControlSurvey_Load(object sender, EventArgs e)
@@ -48,11 +48,11 @@ namespace EPowerGenerateLicense.Interface
             foreach (DataGridViewRow row in dataGridViewSurvey.SelectedRows)
             {
                 DATE = Convert.ToDateTime(row.Cells[1].Value);
-                BY = row.Cells[2].Value.ToString();
+                BY = row.Cells[3].Value.ToString();
                 //REMAIN_LICENSE = row.Cells[5].Value.ToString();
                 //string RESULT = Regex.Match(REMAIN_LICENSE, @"\d+").Value;
             }
-            if (e.ColumnIndex == 3)
+            if (e.ColumnIndex == 4)
             {
                 FormLicenseAvailableByCreateOn frm = new FormLicenseAvailableByCreateOn();
                 frm.ShowDialog();
@@ -62,6 +62,7 @@ namespace EPowerGenerateLicense.Interface
             {
                 GC.Collect();
             }
+            cboSeason_SelectedIndexChanged(null, null);
         }
 
         private void dataGridViewSurvey_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
