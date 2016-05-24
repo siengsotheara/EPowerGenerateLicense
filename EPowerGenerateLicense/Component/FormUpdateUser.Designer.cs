@@ -48,7 +48,7 @@
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 25);
-            this.btnSave.TabIndex = 2;
+            this.btnSave.TabIndex = 3;
             this.btnSave.Text = "&រក្សាទុក";
             this.btnSave.UseSelectable = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -60,7 +60,7 @@
             this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 25);
-            this.btnClose.TabIndex = 3;
+            this.btnClose.TabIndex = 4;
             this.btnClose.Text = "&បោះបង់";
             this.btnClose.UseSelectable = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -81,7 +81,7 @@
             this.txtPwdOld.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPwdOld.Name = "txtPwdOld";
             this.txtPwdOld.Size = new System.Drawing.Size(271, 29);
-            this.txtPwdOld.TabIndex = 0;
+            this.txtPwdOld.TabIndex = 1;
             this.txtPwdOld.UseSystemPasswordChar = true;
             // 
             // label3
@@ -139,7 +139,7 @@
             this.txtPwdNew.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPwdNew.Name = "txtPwdNew";
             this.txtPwdNew.Size = new System.Drawing.Size(271, 29);
-            this.txtPwdNew.TabIndex = 1;
+            this.txtPwdNew.TabIndex = 2;
             this.txtPwdNew.UseSystemPasswordChar = true;
             // 
             // label6

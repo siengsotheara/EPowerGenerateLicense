@@ -75,8 +75,8 @@ namespace EPowerGenerateLicense.Model
                       where s.SEASON_ID == SEASON_ID && Schedule.SCHEDULE_ID == null
                       select new CLASS_TBL_LICENSE_AVAILABLE
                       {
-                          LICENSE_NUMBER = l.LICENSE_NUMBER,
-                          ACCOUNT_NAME = l.FIRST_NAME + " " + l.LAST_NAME,
+                          LICENSE_NUMBER = l.ACCOUNT_NO,
+                          ACCOUNT_NAME = l.ACCOUNT_NAME,
                           PHONE = l.PHONE,
                           COLOR_ID = Convert.ToInt32(type.COLOR_ID)
                       };

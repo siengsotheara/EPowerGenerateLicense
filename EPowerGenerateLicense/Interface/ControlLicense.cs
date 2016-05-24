@@ -96,7 +96,7 @@ namespace EPowerGenerateLicense.Interface
                     using (LicenseDataContext _context = new LicenseDataContext())
                     {
                         TBL_LICENSE license = (from l in _context.TBL_LICENSEs
-                                               where l.LICENSE_NUMBER == LICENSE_NUMBER
+                                               where l.ACCOUNT_NO == LICENSE_NUMBER
                                                select l).FirstOrDefault();
                         license.IS_ACTIVE = false;
                         _context.SubmitChanges();
@@ -158,7 +158,7 @@ namespace EPowerGenerateLicense.Interface
 
         private void dataGridViewLicense_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            int index = 6;  // COLOR_ID
+            int index = 12;  // COLOR_ID
             foreach (DataGridViewRow row in dataGridViewLicense.Rows)
             {
                 if ((int)row.Cells[index].Value == 1)

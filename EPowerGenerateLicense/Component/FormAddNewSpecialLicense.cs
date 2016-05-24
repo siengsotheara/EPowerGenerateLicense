@@ -133,8 +133,8 @@ namespace EPowerGenerateLicense.Component
                 //MessageBox.Show(ID.ToString());
                 foreach (var item in lda.ShowLicenseByID(ID))
                 {
-                    txtAccountName.Text = item.FIRST_NAME + " " + item.LAST_NAME;
-                    txtLicenseNumber.Text = item.LICENSE_NUMBER;
+                    txtAccountName.Text = item.ACCOUNT_NAME;
+                    txtLicenseNumber.Text = item.ACCOUNT_NO;
                     LICENSE_ID = item.LICENSE_ID;
                 }
             }

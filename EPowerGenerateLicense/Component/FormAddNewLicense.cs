@@ -31,7 +31,7 @@ namespace EPowerGenerateLicense
             {
                 foreach (var item in lda.CheckLicenseNumber(txtLicenseNumber.Text))
                 {
-                    LICENSE_NUMBER = item.LICENSE_NUMBER.ToString();
+                    LICENSE_NUMBER = item.ACCOUNT_NO.ToString();
                 }
             }
             bool flag = false;
@@ -89,9 +89,8 @@ namespace EPowerGenerateLicense
                     {
                         TBL_LICENSE l = new TBL_LICENSE();
 
-                        l.FIRST_NAME = txtFirstname.Text.Trim();
-                        l.LAST_NAME = txtLastname.Text.Trim();
-                        l.LICENSE_NUMBER = txtLicenseNumber.Text.Trim();
+                        l.ACCOUNT_NAME = txtLastname.Text.Trim();
+                        l.ACCOUNT_NO = txtLicenseNumber.Text.Trim();
                         l.CONTACT_NAME = txtContactName.Text.Trim();
                         l.PHONE = txtPhone.Text.Trim();
                         l.ADDRESS = txtAddress.Text.Trim();

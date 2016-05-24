@@ -33,8 +33,8 @@ namespace EPowerGenerateLicense.Model
                        select new CLASS_TBL_LICENSE
                        {
                            LICENSE_ID = l.LICENSE_ID,
-                           LICENSE_NUMBER = l.LICENSE_NUMBER,
-                           FULLNAME = l.FIRST_NAME + " " + l.LAST_NAME,
+                           ACCOUNT_NO = l.ACCOUNT_NO,
+                           ACCOUNT_NAME = l.ACCOUNT_NAME,
                            CONTACT_NAME = l.CONTACT_NAME,
                            PHONE = l.PHONE,
                            ADDRESS = l.ADDRESS
@@ -49,8 +49,8 @@ namespace EPowerGenerateLicense.Model
                       select new CLASS_TBL_LICENSE
                       {
                           LICENSE_ID = l.LICENSE_ID,
-                          LICENSE_NUMBER = l.LICENSE_NUMBER,
-                          FULLNAME = l.FIRST_NAME + " "+l.LAST_NAME,
+                          ACCOUNT_NO = l.ACCOUNT_NO,
+                          ACCOUNT_NAME = l.ACCOUNT_NAME,
                           CONTACT_NAME = l.CONTACT_NAME,
                           PHONE = l.PHONE,
                           ADDRESS = l.ADDRESS,
@@ -66,14 +66,14 @@ namespace EPowerGenerateLicense.Model
                        join lt in _context.TBL_LICENSE_TYPEs on l.LICENSE_ID equals lt.LICENSE_ID
                        where l.ADDRESS.Contains(prompt) 
                        || l.CONTACT_NAME.Contains(prompt) 
-                       || l.FIRST_NAME.Contains(prompt)
-                       || l.LAST_NAME.Contains(prompt)
-                       || (l.FIRST_NAME +" "+ l.LAST_NAME).Contains(prompt)
+                       || l.ACCOUNT_NO.Contains(prompt)
+                       || l.ACCOUNT_NAME.Contains(prompt)
+                       || l.PROVINCE_NAME.Contains(prompt)
                        || l.PHONE.Contains(prompt)
                        select new CLASS_TBL_LICENSE
                        {
-                           LICENSE_NUMBER = l.LICENSE_NUMBER,
-                           FULLNAME = l.FIRST_NAME + " " + l.LAST_NAME,
+                           ACCOUNT_NO = l.ACCOUNT_NO,
+                           ACCOUNT_NAME = l.ACCOUNT_NAME,
                            CONTACT_NAME = l.CONTACT_NAME,
                            PHONE = l.PHONE,
                            ADDRESS = l.ADDRESS,

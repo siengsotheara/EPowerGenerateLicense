@@ -26,14 +26,14 @@ namespace EPowerGenerateLicense.Component
             using (LicenseDataContext _context = new LicenseDataContext())
             {
                 TBL_LICENSE license = (from l in _context.TBL_LICENSEs
-                                       where l.LICENSE_NUMBER == ControlLicense.LICENSE_NUMBER
+                                       where l.ACCOUNT_NO == ControlLicense.LICENSE_NUMBER
                                        select l).FirstOrDefault();
                 if (license != null)
                 {
                     LICENSE_ID = license.LICENSE_ID;
-                    txtLicenseNumber.Text = license.LICENSE_NUMBER;
-                    txtLastname.Text = license.LAST_NAME;
-                    txtFirstname.Text = license.FIRST_NAME;
+                    txtLicenseNumber.Text = license.ACCOUNT_NO;
+                   // txtLastname.Text = license.LAST_NAME;
+                  //  txtFirstname.Text = license.FIRST_NAME;
                     txtContactName.Text = license.CONTACT_NAME;
                     txtPhone.Text = license.PHONE;
                     txtAddress.Text = license.ADDRESS;
@@ -50,12 +50,12 @@ namespace EPowerGenerateLicense.Component
             using (LicenseDataContext _context = new LicenseDataContext())
             {
                 TBL_LICENSE license = (from l in _context.TBL_LICENSEs
-                                       where l.LICENSE_NUMBER == txtLicenseNumber.Text
+                                       where l.ACCOUNT_NO == txtLicenseNumber.Text
                                        select l).FirstOrDefault();
 
-                license.FIRST_NAME = txtFirstname.Text.Trim();
-                license.LAST_NAME = txtLastname.Text.Trim();
-                license.LICENSE_NUMBER = txtLicenseNumber.Text.Trim();
+          //      license.FIRST_NAME = txtFirstname.Text.Trim();
+          //      license.LAST_NAME = txtLastname.Text.Trim();
+           //     license.LICENSE_NUMBER = txtLicenseNumber.Text.Trim();
                 license.CONTACT_NAME = txtContactName.Text.Trim();
                 license.PHONE = txtPhone.Text.Trim();
                 license.ADDRESS = txtAddress.Text;

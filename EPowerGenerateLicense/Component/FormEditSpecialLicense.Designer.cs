@@ -67,7 +67,8 @@
             this.cboColor.Items.AddRange(new object[] {
             "ក្រហម (100%)",
             "ផ្កាឈូក (75%)",
-            "ខៀវ (50%)"});
+            "ខៀវ (50%)",
+            "ធម្មតា(0%)"});
             this.cboColor.Location = new System.Drawing.Point(462, 67);
             this.cboColor.Name = "cboColor";
             this.cboColor.Size = new System.Drawing.Size(229, 27);

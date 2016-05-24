@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewFollowUP = new System.Windows.Forms.DataGridView();
             this.lblHeader = new System.Windows.Forms.Label();
@@ -97,28 +98,28 @@
             this.NOTE,
             this.IS_ACTIVE,
             this.COLOR_ID});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Khmer OS System", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewFollowUP.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Khmer OS System", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewFollowUP.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewFollowUP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewFollowUP.EnableHeadersVisualStyles = false;
             this.dataGridViewFollowUP.Location = new System.Drawing.Point(5, 60);
             this.dataGridViewFollowUP.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.dataGridViewFollowUP.MultiSelect = false;
             this.dataGridViewFollowUP.Name = "dataGridViewFollowUP";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Khmer OS System", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewFollowUP.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Khmer OS System", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewFollowUP.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewFollowUP.RowHeadersVisible = false;
             this.dataGridViewFollowUP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewFollowUP.Size = new System.Drawing.Size(1189, 472);
@@ -190,7 +191,7 @@
             // 
             // LICENSE_NUMBER
             // 
-            this.LICENSE_NUMBER.DataPropertyName = "LICENSE_NUMBER";
+            this.LICENSE_NUMBER.DataPropertyName = "ACCOUNT_NO";
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.LICENSE_NUMBER.DefaultCellStyle = dataGridViewCellStyle2;
             this.LICENSE_NUMBER.FillWeight = 25.91401F;
@@ -201,10 +202,13 @@
             // ACCOUNT_NAME
             // 
             this.ACCOUNT_NAME.DataPropertyName = "ACCOUNT_NAME";
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ACCOUNT_NAME.DefaultCellStyle = dataGridViewCellStyle3;
             this.ACCOUNT_NAME.FillWeight = 138.867F;
             this.ACCOUNT_NAME.HeaderText = "គណនី";
             this.ACCOUNT_NAME.Name = "ACCOUNT_NAME";
             this.ACCOUNT_NAME.ReadOnly = true;
+            this.ACCOUNT_NAME.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // CONTACT_NAME
             // 
@@ -233,9 +237,9 @@
             // FOLLOW_UP_BY
             // 
             this.FOLLOW_UP_BY.DataPropertyName = "FOLLOW_UP_BY";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.FOLLOW_UP_BY.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.FOLLOW_UP_BY.DefaultCellStyle = dataGridViewCellStyle4;
             this.FOLLOW_UP_BY.FillWeight = 38.07107F;
             this.FOLLOW_UP_BY.HeaderText = "Follow Up By";
             this.FOLLOW_UP_BY.Name = "FOLLOW_UP_BY";
@@ -244,8 +248,8 @@
             // NOTE
             // 
             this.NOTE.DataPropertyName = "NOTE";
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.NOTE.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.NOTE.DefaultCellStyle = dataGridViewCellStyle5;
             this.NOTE.FillWeight = 229.7094F;
             this.NOTE.HeaderText = "សំគាល់";
             this.NOTE.Name = "NOTE";

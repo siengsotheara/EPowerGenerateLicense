@@ -8,11 +8,14 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		EPower Survey License|Any CPU = EPower Survey License|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A29586DD-A4D7-41D0-9CD5-0B05FF81CC7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A29586DD-A4D7-41D0-9CD5-0B05FF81CC7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A29586DD-A4D7-41D0-9CD5-0B05FF81CC7F}.EPower Survey License|Any CPU.ActiveCfg = EPower Survey License|Any CPU
+		{A29586DD-A4D7-41D0-9CD5-0B05FF81CC7F}.EPower Survey License|Any CPU.Build.0 = EPower Survey License|Any CPU
 		{A29586DD-A4D7-41D0-9CD5-0B05FF81CC7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A29586DD-A4D7-41D0-9CD5-0B05FF81CC7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

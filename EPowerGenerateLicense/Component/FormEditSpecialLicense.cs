@@ -43,8 +43,8 @@ namespace EPowerGenerateLicense.Component
                 {
                     foreach (var item in lda.ShowLicenseByID(ControlLicenseSpecial.LICENSE_ID))
                     {
-                        txtAccountName.Text = item.FIRST_NAME + " " + item.LAST_NAME;
-                        txtLicenseNumber.Text = item.LICENSE_NUMBER;
+                        txtAccountName.Text = item.ACCOUNT_NAME;
+                        txtLicenseNumber.Text = item.ACCOUNT_NO;
                         LICENSE_ID = item.LICENSE_ID;
                     }
                 }
@@ -87,6 +87,11 @@ namespace EPowerGenerateLicense.Component
                             {
                                 lt.COLOR_ID = 3;
                                 lt.PERCENTAGE = 50;
+                            }
+                            else if (cboColor.SelectedIndex == 3)
+                            {
+                                lt.COLOR_ID = 4;
+                                lt.PERCENTAGE = 0;
                             }
                             _context.SubmitChanges();
                         }

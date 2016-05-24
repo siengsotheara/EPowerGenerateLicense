@@ -37,7 +37,7 @@ namespace EPowerGenerateLicense.Interface
 
         private void dataGridViewLicense_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            int index = 6;  // COLOR_ID
+            int index = 12;  // COLOR_ID
             foreach (DataGridViewRow row in dataGridViewLicense.Rows)
             {
                 if ((int)row.Cells[index].Value == 1)
@@ -124,7 +124,7 @@ namespace EPowerGenerateLicense.Interface
                 foreach (DataGridViewRow row in dataGridViewLicense.SelectedRows)
                 {
                     LICENSE_ID = Convert.ToInt32(row.Cells[0].Value);
-                    COLOR_ID = Convert.ToInt32(row.Cells[6].Value);
+                    COLOR_ID = Convert.ToInt32(row.Cells[12].Value);
                 }
                // MessageBox.Show(LICENSE_ID.ToString());
                 FormEditSpecialLicense frmeditspeciallicense = new FormEditSpecialLicense();

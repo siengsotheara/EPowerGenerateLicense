@@ -51,12 +51,12 @@ namespace EPowerGenerateLicense
     partial void InsertTBL_UTILITY(TBL_UTILITY instance);
     partial void UpdateTBL_UTILITY(TBL_UTILITY instance);
     partial void DeleteTBL_UTILITY(TBL_UTILITY instance);
-    partial void InsertTBL_LICENSE(TBL_LICENSE instance);
-    partial void UpdateTBL_LICENSE(TBL_LICENSE instance);
-    partial void DeleteTBL_LICENSE(TBL_LICENSE instance);
     partial void InsertTBL_LICENSE_GENERATE(TBL_LICENSE_GENERATE instance);
     partial void UpdateTBL_LICENSE_GENERATE(TBL_LICENSE_GENERATE instance);
     partial void DeleteTBL_LICENSE_GENERATE(TBL_LICENSE_GENERATE instance);
+    partial void InsertTBL_LICENSE(TBL_LICENSE instance);
+    partial void UpdateTBL_LICENSE(TBL_LICENSE instance);
+    partial void DeleteTBL_LICENSE(TBL_LICENSE instance);
     #endregion
 		
 		public LicenseDataContext() : 
@@ -145,19 +145,19 @@ namespace EPowerGenerateLicense
 			}
 		}
 		
-		public System.Data.Linq.Table<TBL_LICENSE> TBL_LICENSEs
-		{
-			get
-			{
-				return this.GetTable<TBL_LICENSE>();
-			}
-		}
-		
 		public System.Data.Linq.Table<TBL_LICENSE_GENERATE> TBL_LICENSE_GENERATEs
 		{
 			get
 			{
 				return this.GetTable<TBL_LICENSE_GENERATE>();
+			}
+		}
+		
+		public System.Data.Linq.Table<TBL_LICENSE> TBL_LICENSEs
+		{
+			get
+			{
+				return this.GetTable<TBL_LICENSE>();
 			}
 		}
 		
@@ -182,18 +182,18 @@ namespace EPowerGenerateLicense
 			return ((ISingleResult<RUN_SHOW_NUMBER_AVAILABLEResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.RUN_SHOW_GENERATE_BY_CREATE_ON")]
-		public ISingleResult<RUN_SHOW_GENERATE_BY_CREATE_ONResult> RUN_SHOW_GENERATE_BY_CREATE_ON([global::System.Data.Linq.Mapping.ParameterAttribute(Name="CREATE_ON", DbType="DateTime")] System.Nullable<System.DateTime> cREATE_ON)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), cREATE_ON);
-			return ((ISingleResult<RUN_SHOW_GENERATE_BY_CREATE_ONResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.RUN_SHOW_HISTORY_SURVEY")]
 		public ISingleResult<RUN_SHOW_HISTORY_SURVEYResult> RUN_SHOW_HISTORY_SURVEY([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SEASON_ID", DbType="Int")] System.Nullable<int> sEASON_ID)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), sEASON_ID);
 			return ((ISingleResult<RUN_SHOW_HISTORY_SURVEYResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.RUN_SHOW_GENERATE_BY_CREATE_ON")]
+		public ISingleResult<RUN_SHOW_GENERATE_BY_CREATE_ONResult> RUN_SHOW_GENERATE_BY_CREATE_ON([global::System.Data.Linq.Mapping.ParameterAttribute(Name="CREATE_ON", DbType="DateTime")] System.Nullable<System.DateTime> cREATE_ON)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), cREATE_ON);
+			return ((ISingleResult<RUN_SHOW_GENERATE_BY_CREATE_ONResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -1183,260 +1183,6 @@ namespace EPowerGenerateLicense
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TBL_LICENSE")]
-	public partial class TBL_LICENSE : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _LICENSE_ID;
-		
-		private string _LICENSE_NUMBER;
-		
-		private string _FIRST_NAME;
-		
-		private string _LAST_NAME;
-		
-		private string _PHONE;
-		
-		private string _CONTACT_NAME;
-		
-		private string _ADDRESS;
-		
-		private System.DateTime _CREATE_ON;
-		
-		private bool _IS_ACTIVE;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnLICENSE_IDChanging(int value);
-    partial void OnLICENSE_IDChanged();
-    partial void OnLICENSE_NUMBERChanging(string value);
-    partial void OnLICENSE_NUMBERChanged();
-    partial void OnFIRST_NAMEChanging(string value);
-    partial void OnFIRST_NAMEChanged();
-    partial void OnLAST_NAMEChanging(string value);
-    partial void OnLAST_NAMEChanged();
-    partial void OnPHONEChanging(string value);
-    partial void OnPHONEChanged();
-    partial void OnCONTACT_NAMEChanging(string value);
-    partial void OnCONTACT_NAMEChanged();
-    partial void OnADDRESSChanging(string value);
-    partial void OnADDRESSChanged();
-    partial void OnCREATE_ONChanging(System.DateTime value);
-    partial void OnCREATE_ONChanged();
-    partial void OnIS_ACTIVEChanging(bool value);
-    partial void OnIS_ACTIVEChanged();
-    #endregion
-		
-		public TBL_LICENSE()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LICENSE_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int LICENSE_ID
-		{
-			get
-			{
-				return this._LICENSE_ID;
-			}
-			set
-			{
-				if ((this._LICENSE_ID != value))
-				{
-					this.OnLICENSE_IDChanging(value);
-					this.SendPropertyChanging();
-					this._LICENSE_ID = value;
-					this.SendPropertyChanged("LICENSE_ID");
-					this.OnLICENSE_IDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LICENSE_NUMBER", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
-		public string LICENSE_NUMBER
-		{
-			get
-			{
-				return this._LICENSE_NUMBER;
-			}
-			set
-			{
-				if ((this._LICENSE_NUMBER != value))
-				{
-					this.OnLICENSE_NUMBERChanging(value);
-					this.SendPropertyChanging();
-					this._LICENSE_NUMBER = value;
-					this.SendPropertyChanged("LICENSE_NUMBER");
-					this.OnLICENSE_NUMBERChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FIRST_NAME", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
-		public string FIRST_NAME
-		{
-			get
-			{
-				return this._FIRST_NAME;
-			}
-			set
-			{
-				if ((this._FIRST_NAME != value))
-				{
-					this.OnFIRST_NAMEChanging(value);
-					this.SendPropertyChanging();
-					this._FIRST_NAME = value;
-					this.SendPropertyChanged("FIRST_NAME");
-					this.OnFIRST_NAMEChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LAST_NAME", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
-		public string LAST_NAME
-		{
-			get
-			{
-				return this._LAST_NAME;
-			}
-			set
-			{
-				if ((this._LAST_NAME != value))
-				{
-					this.OnLAST_NAMEChanging(value);
-					this.SendPropertyChanging();
-					this._LAST_NAME = value;
-					this.SendPropertyChanged("LAST_NAME");
-					this.OnLAST_NAMEChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PHONE", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
-		public string PHONE
-		{
-			get
-			{
-				return this._PHONE;
-			}
-			set
-			{
-				if ((this._PHONE != value))
-				{
-					this.OnPHONEChanging(value);
-					this.SendPropertyChanging();
-					this._PHONE = value;
-					this.SendPropertyChanged("PHONE");
-					this.OnPHONEChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CONTACT_NAME", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-		public string CONTACT_NAME
-		{
-			get
-			{
-				return this._CONTACT_NAME;
-			}
-			set
-			{
-				if ((this._CONTACT_NAME != value))
-				{
-					this.OnCONTACT_NAMEChanging(value);
-					this.SendPropertyChanging();
-					this._CONTACT_NAME = value;
-					this.SendPropertyChanged("CONTACT_NAME");
-					this.OnCONTACT_NAMEChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ADDRESS", DbType="NVarChar(200) NOT NULL", CanBeNull=false)]
-		public string ADDRESS
-		{
-			get
-			{
-				return this._ADDRESS;
-			}
-			set
-			{
-				if ((this._ADDRESS != value))
-				{
-					this.OnADDRESSChanging(value);
-					this.SendPropertyChanging();
-					this._ADDRESS = value;
-					this.SendPropertyChanged("ADDRESS");
-					this.OnADDRESSChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_ON", DbType="DateTime NOT NULL")]
-		public System.DateTime CREATE_ON
-		{
-			get
-			{
-				return this._CREATE_ON;
-			}
-			set
-			{
-				if ((this._CREATE_ON != value))
-				{
-					this.OnCREATE_ONChanging(value);
-					this.SendPropertyChanging();
-					this._CREATE_ON = value;
-					this.SendPropertyChanged("CREATE_ON");
-					this.OnCREATE_ONChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IS_ACTIVE", DbType="Bit NOT NULL")]
-		public bool IS_ACTIVE
-		{
-			get
-			{
-				return this._IS_ACTIVE;
-			}
-			set
-			{
-				if ((this._IS_ACTIVE != value))
-				{
-					this.OnIS_ACTIVEChanging(value);
-					this.SendPropertyChanging();
-					this._IS_ACTIVE = value;
-					this.SendPropertyChanged("IS_ACTIVE");
-					this.OnIS_ACTIVEChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TBL_LICENSE_GENERATE")]
 	public partial class TBL_LICENSE_GENERATE : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -1667,6 +1413,356 @@ namespace EPowerGenerateLicense
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TBL_LICENSE")]
+	public partial class TBL_LICENSE : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _LICENSE_ID;
+		
+		private string _ACCOUNT_NO;
+		
+		private string _ACCOUNT_NAME;
+		
+		private string _PHONE;
+		
+		private string _CONTACT_NAME;
+		
+		private string _ADDRESS;
+		
+		private string _EMAIL;
+		
+		private string _PROVINCE_NAME;
+		
+		private string _DISTRICT_NAME;
+		
+		private string _COMMUNE_NAME;
+		
+		private string _VILLAGE_NAME;
+		
+		private System.DateTime _CREATE_ON;
+		
+		private bool _IS_ACTIVE;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnLICENSE_IDChanging(int value);
+    partial void OnLICENSE_IDChanged();
+    partial void OnACCOUNT_NOChanging(string value);
+    partial void OnACCOUNT_NOChanged();
+    partial void OnACCOUNT_NAMEChanging(string value);
+    partial void OnACCOUNT_NAMEChanged();
+    partial void OnPHONEChanging(string value);
+    partial void OnPHONEChanged();
+    partial void OnCONTACT_NAMEChanging(string value);
+    partial void OnCONTACT_NAMEChanged();
+    partial void OnADDRESSChanging(string value);
+    partial void OnADDRESSChanged();
+    partial void OnEMAILChanging(string value);
+    partial void OnEMAILChanged();
+    partial void OnPROVINCE_NAMEChanging(string value);
+    partial void OnPROVINCE_NAMEChanged();
+    partial void OnDISTRICT_NAMEChanging(string value);
+    partial void OnDISTRICT_NAMEChanged();
+    partial void OnCOMMUNE_NAMEChanging(string value);
+    partial void OnCOMMUNE_NAMEChanged();
+    partial void OnVILLAGE_NAMEChanging(string value);
+    partial void OnVILLAGE_NAMEChanged();
+    partial void OnCREATE_ONChanging(System.DateTime value);
+    partial void OnCREATE_ONChanged();
+    partial void OnIS_ACTIVEChanging(bool value);
+    partial void OnIS_ACTIVEChanged();
+    #endregion
+		
+		public TBL_LICENSE()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LICENSE_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int LICENSE_ID
+		{
+			get
+			{
+				return this._LICENSE_ID;
+			}
+			set
+			{
+				if ((this._LICENSE_ID != value))
+				{
+					this.OnLICENSE_IDChanging(value);
+					this.SendPropertyChanging();
+					this._LICENSE_ID = value;
+					this.SendPropertyChanged("LICENSE_ID");
+					this.OnLICENSE_IDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ACCOUNT_NO", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
+		public string ACCOUNT_NO
+		{
+			get
+			{
+				return this._ACCOUNT_NO;
+			}
+			set
+			{
+				if ((this._ACCOUNT_NO != value))
+				{
+					this.OnACCOUNT_NOChanging(value);
+					this.SendPropertyChanging();
+					this._ACCOUNT_NO = value;
+					this.SendPropertyChanged("ACCOUNT_NO");
+					this.OnACCOUNT_NOChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ACCOUNT_NAME", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+		public string ACCOUNT_NAME
+		{
+			get
+			{
+				return this._ACCOUNT_NAME;
+			}
+			set
+			{
+				if ((this._ACCOUNT_NAME != value))
+				{
+					this.OnACCOUNT_NAMEChanging(value);
+					this.SendPropertyChanging();
+					this._ACCOUNT_NAME = value;
+					this.SendPropertyChanged("ACCOUNT_NAME");
+					this.OnACCOUNT_NAMEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PHONE", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+		public string PHONE
+		{
+			get
+			{
+				return this._PHONE;
+			}
+			set
+			{
+				if ((this._PHONE != value))
+				{
+					this.OnPHONEChanging(value);
+					this.SendPropertyChanging();
+					this._PHONE = value;
+					this.SendPropertyChanged("PHONE");
+					this.OnPHONEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CONTACT_NAME", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+		public string CONTACT_NAME
+		{
+			get
+			{
+				return this._CONTACT_NAME;
+			}
+			set
+			{
+				if ((this._CONTACT_NAME != value))
+				{
+					this.OnCONTACT_NAMEChanging(value);
+					this.SendPropertyChanging();
+					this._CONTACT_NAME = value;
+					this.SendPropertyChanged("CONTACT_NAME");
+					this.OnCONTACT_NAMEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ADDRESS", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+		public string ADDRESS
+		{
+			get
+			{
+				return this._ADDRESS;
+			}
+			set
+			{
+				if ((this._ADDRESS != value))
+				{
+					this.OnADDRESSChanging(value);
+					this.SendPropertyChanging();
+					this._ADDRESS = value;
+					this.SendPropertyChanged("ADDRESS");
+					this.OnADDRESSChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EMAIL", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+		public string EMAIL
+		{
+			get
+			{
+				return this._EMAIL;
+			}
+			set
+			{
+				if ((this._EMAIL != value))
+				{
+					this.OnEMAILChanging(value);
+					this.SendPropertyChanging();
+					this._EMAIL = value;
+					this.SendPropertyChanged("EMAIL");
+					this.OnEMAILChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PROVINCE_NAME", DbType="NVarChar(50)")]
+		public string PROVINCE_NAME
+		{
+			get
+			{
+				return this._PROVINCE_NAME;
+			}
+			set
+			{
+				if ((this._PROVINCE_NAME != value))
+				{
+					this.OnPROVINCE_NAMEChanging(value);
+					this.SendPropertyChanging();
+					this._PROVINCE_NAME = value;
+					this.SendPropertyChanged("PROVINCE_NAME");
+					this.OnPROVINCE_NAMEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DISTRICT_NAME", DbType="NVarChar(50)")]
+		public string DISTRICT_NAME
+		{
+			get
+			{
+				return this._DISTRICT_NAME;
+			}
+			set
+			{
+				if ((this._DISTRICT_NAME != value))
+				{
+					this.OnDISTRICT_NAMEChanging(value);
+					this.SendPropertyChanging();
+					this._DISTRICT_NAME = value;
+					this.SendPropertyChanged("DISTRICT_NAME");
+					this.OnDISTRICT_NAMEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_COMMUNE_NAME", DbType="NVarChar(50)")]
+		public string COMMUNE_NAME
+		{
+			get
+			{
+				return this._COMMUNE_NAME;
+			}
+			set
+			{
+				if ((this._COMMUNE_NAME != value))
+				{
+					this.OnCOMMUNE_NAMEChanging(value);
+					this.SendPropertyChanging();
+					this._COMMUNE_NAME = value;
+					this.SendPropertyChanged("COMMUNE_NAME");
+					this.OnCOMMUNE_NAMEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_VILLAGE_NAME", DbType="NVarChar(50)")]
+		public string VILLAGE_NAME
+		{
+			get
+			{
+				return this._VILLAGE_NAME;
+			}
+			set
+			{
+				if ((this._VILLAGE_NAME != value))
+				{
+					this.OnVILLAGE_NAMEChanging(value);
+					this.SendPropertyChanging();
+					this._VILLAGE_NAME = value;
+					this.SendPropertyChanged("VILLAGE_NAME");
+					this.OnVILLAGE_NAMEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_ON", DbType="DateTime NOT NULL")]
+		public System.DateTime CREATE_ON
+		{
+			get
+			{
+				return this._CREATE_ON;
+			}
+			set
+			{
+				if ((this._CREATE_ON != value))
+				{
+					this.OnCREATE_ONChanging(value);
+					this.SendPropertyChanging();
+					this._CREATE_ON = value;
+					this.SendPropertyChanged("CREATE_ON");
+					this.OnCREATE_ONChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IS_ACTIVE", DbType="Bit NOT NULL")]
+		public bool IS_ACTIVE
+		{
+			get
+			{
+				return this._IS_ACTIVE;
+			}
+			set
+			{
+				if ((this._IS_ACTIVE != value))
+				{
+					this.OnIS_ACTIVEChanging(value);
+					this.SendPropertyChanging();
+					this._IS_ACTIVE = value;
+					this.SendPropertyChanged("IS_ACTIVE");
+					this.OnIS_ACTIVEChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
 	public partial class RUN_SHOW_SEASON_AVAILABLEResult
 	{
 		
@@ -1835,6 +1931,104 @@ namespace EPowerGenerateLicense
 		}
 	}
 	
+	public partial class RUN_SHOW_HISTORY_SURVEYResult
+	{
+		
+		private System.Nullable<long> _ROW_ID;
+		
+		private System.DateTime _CREATE_ON;
+		
+		private string _FOLLOW_UP_BY;
+		
+		private string _CREATE_BY;
+		
+		private string _TOTAL_LICENSE;
+		
+		public RUN_SHOW_HISTORY_SURVEYResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ROW_ID", DbType="BigInt")]
+		public System.Nullable<long> ROW_ID
+		{
+			get
+			{
+				return this._ROW_ID;
+			}
+			set
+			{
+				if ((this._ROW_ID != value))
+				{
+					this._ROW_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_ON", DbType="DateTime NOT NULL")]
+		public System.DateTime CREATE_ON
+		{
+			get
+			{
+				return this._CREATE_ON;
+			}
+			set
+			{
+				if ((this._CREATE_ON != value))
+				{
+					this._CREATE_ON = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FOLLOW_UP_BY", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string FOLLOW_UP_BY
+		{
+			get
+			{
+				return this._FOLLOW_UP_BY;
+			}
+			set
+			{
+				if ((this._FOLLOW_UP_BY != value))
+				{
+					this._FOLLOW_UP_BY = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_BY", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string CREATE_BY
+		{
+			get
+			{
+				return this._CREATE_BY;
+			}
+			set
+			{
+				if ((this._CREATE_BY != value))
+				{
+					this._CREATE_BY = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TOTAL_LICENSE", DbType="NVarChar(34)")]
+		public string TOTAL_LICENSE
+		{
+			get
+			{
+				return this._TOTAL_LICENSE;
+			}
+			set
+			{
+				if ((this._TOTAL_LICENSE != value))
+				{
+					this._TOTAL_LICENSE = value;
+				}
+			}
+		}
+	}
+	
 	public partial class RUN_SHOW_GENERATE_BY_CREATE_ONResult
 	{
 		
@@ -1850,7 +2044,7 @@ namespace EPowerGenerateLicense
 		
 		private string _NOTE;
 		
-		private string _LICENSE_NUMBER;
+		private string _ACCOUNT_NO;
 		
 		private string _ACCOUNT_NAME;
 		
@@ -1960,23 +2154,23 @@ namespace EPowerGenerateLicense
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LICENSE_NUMBER", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
-		public string LICENSE_NUMBER
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ACCOUNT_NO", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
+		public string ACCOUNT_NO
 		{
 			get
 			{
-				return this._LICENSE_NUMBER;
+				return this._ACCOUNT_NO;
 			}
 			set
 			{
-				if ((this._LICENSE_NUMBER != value))
+				if ((this._ACCOUNT_NO != value))
 				{
-					this._LICENSE_NUMBER = value;
+					this._ACCOUNT_NO = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ACCOUNT_NAME", DbType="NVarChar(201) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ACCOUNT_NAME", DbType="NVarChar(308) NOT NULL", CanBeNull=false)]
 		public string ACCOUNT_NAME
 		{
 			get
@@ -1992,7 +2186,7 @@ namespace EPowerGenerateLicense
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CONTACT_NAME", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CONTACT_NAME", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
 		public string CONTACT_NAME
 		{
 			get
@@ -2036,104 +2230,6 @@ namespace EPowerGenerateLicense
 				if ((this._COLOR_ID != value))
 				{
 					this._COLOR_ID = value;
-				}
-			}
-		}
-	}
-	
-	public partial class RUN_SHOW_HISTORY_SURVEYResult
-	{
-		
-		private System.Nullable<long> _ROW_ID;
-		
-		private System.DateTime _CREATE_ON;
-		
-		private string _FOLLOW_UP_BY;
-		
-		private string _CREATE_BY;
-		
-		private string _TOTAL_LICENSE;
-		
-		public RUN_SHOW_HISTORY_SURVEYResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ROW_ID", DbType="BigInt")]
-		public System.Nullable<long> ROW_ID
-		{
-			get
-			{
-				return this._ROW_ID;
-			}
-			set
-			{
-				if ((this._ROW_ID != value))
-				{
-					this._ROW_ID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_ON", DbType="DateTime NOT NULL")]
-		public System.DateTime CREATE_ON
-		{
-			get
-			{
-				return this._CREATE_ON;
-			}
-			set
-			{
-				if ((this._CREATE_ON != value))
-				{
-					this._CREATE_ON = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FOLLOW_UP_BY", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-		public string FOLLOW_UP_BY
-		{
-			get
-			{
-				return this._FOLLOW_UP_BY;
-			}
-			set
-			{
-				if ((this._FOLLOW_UP_BY != value))
-				{
-					this._FOLLOW_UP_BY = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_BY", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
-		public string CREATE_BY
-		{
-			get
-			{
-				return this._CREATE_BY;
-			}
-			set
-			{
-				if ((this._CREATE_BY != value))
-				{
-					this._CREATE_BY = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TOTAL_LICENSE", DbType="NVarChar(34)")]
-		public string TOTAL_LICENSE
-		{
-			get
-			{
-				return this._TOTAL_LICENSE;
-			}
-			set
-			{
-				if ((this._TOTAL_LICENSE != value))
-				{
-					this._TOTAL_LICENSE = value;
 				}
 			}
 		}
