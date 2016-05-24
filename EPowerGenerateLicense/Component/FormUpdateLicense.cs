@@ -32,11 +32,16 @@ namespace EPowerGenerateLicense.Component
                 {
                     LICENSE_ID = license.LICENSE_ID;
                     txtLicenseNumber.Text = license.ACCOUNT_NO;
-                   // txtLastname.Text = license.LAST_NAME;
-                  //  txtFirstname.Text = license.FIRST_NAME;
+                    txtAccountName.Text = license.ACCOUNT_NAME;
+                    txtPhone.Text = license.PHONE;
                     txtContactName.Text = license.CONTACT_NAME;
                     txtPhone.Text = license.PHONE;
+                    txtProvince.Text = license.PROVINCE_NAME;
+                    txtDistrict.Text = license.DISTRICT_NAME;
+                    txtCommune.Text = license.COMMUNE_NAME;
+                    txtVillage.Text = license.VILLAGE_NAME;
                     txtAddress.Text = license.ADDRESS;
+                    txtEmail.Text = license.EMAIL;
                 }
                 else
                 {
@@ -53,12 +58,17 @@ namespace EPowerGenerateLicense.Component
                                        where l.ACCOUNT_NO == txtLicenseNumber.Text
                                        select l).FirstOrDefault();
 
-          //      license.FIRST_NAME = txtFirstname.Text.Trim();
-          //      license.LAST_NAME = txtLastname.Text.Trim();
-           //     license.LICENSE_NUMBER = txtLicenseNumber.Text.Trim();
+                license.ACCOUNT_NO = txtLicenseNumber.Text.Trim();
+                license.ACCOUNT_NAME = txtAccountName.Text.Trim();
+                license.PHONE = txtPhone.Text.Trim();
+                license.EMAIL = txtEmail.Text.Trim();
                 license.CONTACT_NAME = txtContactName.Text.Trim();
                 license.PHONE = txtPhone.Text.Trim();
-                license.ADDRESS = txtAddress.Text;
+                license.ADDRESS = txtAddress.Text.Trim();
+                license.PROVINCE_NAME = txtProvince.Text.Trim();
+                license.DISTRICT_NAME = txtDistrict.Text.Trim();
+                license.COMMUNE_NAME = txtCommune.Text.Trim();
+                license.VILLAGE_NAME = txtVillage.Text.Trim();
                 _context.SubmitChanges();
             };
             this.Close();

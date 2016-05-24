@@ -45,16 +45,16 @@ namespace EPowerGenerateLicense
                 this.txtLicenseNumber.SetValidation(string.Format(Properties.Resources.REQUIRED_LICENSENUMBER, this.label1.Text));
                 flag = true;
             } 
-            if (this.txtFirstname.Text == "")
+            if (this.txtAccountName.Text == "")
             {
-                this.txtFirstname.SetValidation(string.Format(Properties.Resources.REQUIRED_FIRSTNAME, this.label1.Text));
+                this.txtAccountName.SetValidation(string.Format(Properties.Resources.REQUIRED_ACCOUNTNAME, this.label1.Text));
                 flag = true;
             }
-            //if (this.txtLastname.Text == "")
-            //{
-            //    this.txtLastname.SetValidation(string.Format(Properties.Resources.REQUIRED_LASTNAME, this.label1.Text));
-            //    flag = true;
-            //}
+            if (this.txtProvince.Text == "")
+            {
+                this.txtProvince.SetValidation(string.Format(Properties.Resources.REQUIRED_PROVINCE_NAME, this.label1.Text));
+                flag = true;
+            }
             if (this.txtContactName.Text == "")
             {
                 this.txtContactName.SetValidation(string.Format(Properties.Resources.REQUIRED_CONTACTNAME, this.label1.Text));
@@ -89,10 +89,15 @@ namespace EPowerGenerateLicense
                     {
                         TBL_LICENSE l = new TBL_LICENSE();
 
-                        l.ACCOUNT_NAME = txtLastname.Text.Trim();
+                        l.ACCOUNT_NAME = txtPhone.Text.Trim();
                         l.ACCOUNT_NO = txtLicenseNumber.Text.Trim();
                         l.CONTACT_NAME = txtContactName.Text.Trim();
                         l.PHONE = txtPhone.Text.Trim();
+                        l.EMAIL = txtEmail.Text.Trim();
+                        l.PROVINCE_NAME = txtProvince.Text.Trim();
+                        l.DISTRICT_NAME = txtDistrict.Text.Trim();
+                        l.COMMUNE_NAME = txtCommune.Text.Trim();
+                        l.VILLAGE_NAME = txtVillage.Text.Trim();
                         l.ADDRESS = txtAddress.Text.Trim();
                         l.IS_ACTIVE = true;
                         l.CREATE_ON = Convert.ToDateTime(DateTime.Now.ToString());

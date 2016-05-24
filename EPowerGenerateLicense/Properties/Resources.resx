@@ -178,8 +178,8 @@
   <data name="REQUIRED_CONTACTNAME" xml:space="preserve">
     <value>សូមបំពេញអ្នកទំនាកទំនង</value>
   </data>
-  <data name="REQUIRED_FIRSTNAME" xml:space="preserve">
-    <value>សូមបំពេញនាម</value>
+  <data name="REQUIRED_ACCOUNTNAME" xml:space="preserve">
+    <value>សូមបំពេញឈ្មោះគណនី</value>
   </data>
   <data name="REQUIRED_LASTNAME" xml:space="preserve">
     <value>សូមបំពេញគោត្តនាម</value>
@@ -207,5 +207,8 @@
   </data>
   <data name="ALREADY_USERNAME" xml:space="preserve">
     <value>ឈ្មោះអ្នកប្រើមានរួចហើយ</value>
+  </data>
+  <data name="REQUIRED_PROVINCE_NAME" xml:space="preserve">
+    <value>សូមបំពេញឈ្មោះខេត្ត</value>
   </data>
 </root>
