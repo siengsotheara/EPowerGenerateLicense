@@ -50,13 +50,14 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IS_ACTIVE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.COLOR_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EMAIL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LICENSE_TYPE_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PROVINCE_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DISTRICT_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.COMMUNE_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VILLAGE_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IS_ACTIVE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLicense)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,13 +87,14 @@
             this.Column3,
             this.Column4,
             this.Column5,
+            this.IS_ACTIVE,
+            this.COLOR_ID,
             this.EMAIL,
+            this.LICENSE_TYPE_ID,
             this.PROVINCE_NAME,
             this.DISTRICT_NAME,
             this.COMMUNE_NAME,
-            this.VILLAGE_NAME,
-            this.IS_ACTIVE,
-            this.Column6});
+            this.VILLAGE_NAME});
             this.dataGridViewLicense.Cursor = System.Windows.Forms.Cursors.Arrow;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
@@ -312,6 +314,22 @@
             this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column5.Visible = false;
             // 
+            // IS_ACTIVE
+            // 
+            this.IS_ACTIVE.DataPropertyName = "IS_ACTIVE";
+            this.IS_ACTIVE.HeaderText = "IS_ACTIVE";
+            this.IS_ACTIVE.Name = "IS_ACTIVE";
+            this.IS_ACTIVE.ReadOnly = true;
+            this.IS_ACTIVE.Visible = false;
+            // 
+            // COLOR_ID
+            // 
+            this.COLOR_ID.DataPropertyName = "COLOR_ID";
+            this.COLOR_ID.HeaderText = "COLOR_ID";
+            this.COLOR_ID.Name = "COLOR_ID";
+            this.COLOR_ID.ReadOnly = true;
+            this.COLOR_ID.Visible = false;
+            // 
             // EMAIL
             // 
             this.EMAIL.DataPropertyName = "EMAIL";
@@ -319,6 +337,14 @@
             this.EMAIL.Name = "EMAIL";
             this.EMAIL.ReadOnly = true;
             this.EMAIL.Visible = false;
+            // 
+            // LICENSE_TYPE_ID
+            // 
+            this.LICENSE_TYPE_ID.DataPropertyName = "LICENSE_TYPE_ID";
+            this.LICENSE_TYPE_ID.HeaderText = "LICENSE_TYPE_ID";
+            this.LICENSE_TYPE_ID.Name = "LICENSE_TYPE_ID";
+            this.LICENSE_TYPE_ID.ReadOnly = true;
+            this.LICENSE_TYPE_ID.Visible = false;
             // 
             // PROVINCE_NAME
             // 
@@ -351,22 +377,6 @@
             this.VILLAGE_NAME.Name = "VILLAGE_NAME";
             this.VILLAGE_NAME.ReadOnly = true;
             this.VILLAGE_NAME.Visible = false;
-            // 
-            // IS_ACTIVE
-            // 
-            this.IS_ACTIVE.DataPropertyName = "IS_ACTIVE";
-            this.IS_ACTIVE.HeaderText = "IS_ACTIVE";
-            this.IS_ACTIVE.Name = "IS_ACTIVE";
-            this.IS_ACTIVE.ReadOnly = true;
-            this.IS_ACTIVE.Visible = false;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "COLOR_ID";
-            this.Column6.HeaderText = "COLOR_ID";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Visible = false;
             // 
             // FormAddNewSpecialLicense
             // 
@@ -422,13 +432,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IS_ACTIVE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn COLOR_ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn EMAIL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LICENSE_TYPE_ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn PROVINCE_NAME;
         private System.Windows.Forms.DataGridViewTextBoxColumn DISTRICT_NAME;
         private System.Windows.Forms.DataGridViewTextBoxColumn COMMUNE_NAME;
         private System.Windows.Forms.DataGridViewTextBoxColumn VILLAGE_NAME;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IS_ACTIVE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
 
 
     }

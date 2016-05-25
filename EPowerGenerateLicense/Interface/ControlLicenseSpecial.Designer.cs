@@ -44,7 +44,8 @@
             this.txtSearch = new MetroFramework.Controls.MetroTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridViewLicense = new System.Windows.Forms.DataGridView();
-            this.asd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LICENSE_TYPE_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ACCOUNT_NO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ACCOUNT_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PHONE = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,7 +57,7 @@
             this.COMMUNE_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VILLAGE_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IS_ACTIVE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.asd1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.COLOR_ID1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -207,7 +208,8 @@
             this.dataGridViewLicense.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewLicense.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewLicense.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.asd,
+            this.ID,
+            this.LICENSE_TYPE_ID,
             this.ACCOUNT_NO,
             this.ACCOUNT_NAME,
             this.PHONE,
@@ -219,7 +221,7 @@
             this.COMMUNE_NAME,
             this.VILLAGE_NAME,
             this.IS_ACTIVE,
-            this.asd1});
+            this.COLOR_ID1});
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Khmer OS System", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -249,13 +251,20 @@
             this.dataGridViewLicense.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridViewLicense_CellFormatting);
             this.dataGridViewLicense.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dataGridViewLicense_RowPrePaint);
             // 
-            // asd
+            // ID
             // 
-            this.asd.DataPropertyName = "LICENSE_ID";
-            this.asd.HeaderText = "LICENSE_ID";
-            this.asd.Name = "asd";
-            this.asd.ReadOnly = true;
-            this.asd.Visible = false;
+            this.ID.DataPropertyName = "LICENSE_ID";
+            this.ID.HeaderText = "LICENSE_ID";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Visible = false;
+            // 
+            // LICENSE_TYPE_ID
+            // 
+            this.LICENSE_TYPE_ID.DataPropertyName = "LICENSE_TYPE_ID";
+            this.LICENSE_TYPE_ID.HeaderText = "LICENSE_TYPE_ID";
+            this.LICENSE_TYPE_ID.Name = "LICENSE_TYPE_ID";
+            this.LICENSE_TYPE_ID.Visible = false;
             // 
             // ACCOUNT_NO
             // 
@@ -367,13 +376,13 @@
             this.IS_ACTIVE.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.IS_ACTIVE.Visible = false;
             // 
-            // asd1
+            // COLOR_ID1
             // 
-            this.asd1.DataPropertyName = "COLOR_ID";
-            this.asd1.HeaderText = "COLOR_ID";
-            this.asd1.Name = "asd1";
-            this.asd1.ReadOnly = true;
-            this.asd1.Visible = false;
+            this.COLOR_ID1.DataPropertyName = "COLOR_ID";
+            this.COLOR_ID1.HeaderText = "COLOR_ID";
+            this.COLOR_ID1.Name = "COLOR_ID1";
+            this.COLOR_ID1.ReadOnly = true;
+            this.COLOR_ID1.Visible = false;
             // 
             // ControlLicenseSpecial
             // 
@@ -407,7 +416,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         public System.Windows.Forms.DataGridView dataGridViewLicense;
-        private System.Windows.Forms.DataGridViewTextBoxColumn asd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LICENSE_TYPE_ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ACCOUNT_NO;
         private System.Windows.Forms.DataGridViewTextBoxColumn ACCOUNT_NAME;
         private System.Windows.Forms.DataGridViewTextBoxColumn PHONE;
@@ -419,6 +429,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn COMMUNE_NAME;
         private System.Windows.Forms.DataGridViewTextBoxColumn VILLAGE_NAME;
         private System.Windows.Forms.DataGridViewTextBoxColumn IS_ACTIVE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn asd1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn COLOR_ID1;
     }
 }

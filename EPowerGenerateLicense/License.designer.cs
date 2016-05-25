@@ -195,6 +195,13 @@ namespace EPowerGenerateLicense
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), cREATE_ON);
 			return ((ISingleResult<RUN_SHOW_GENERATE_BY_CREATE_ONResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.RUN_SHOW_NOT_SPECIAL_LICENSE")]
+		public ISingleResult<RUN_SHOW_NOT_SPECIAL_LICENSEResult> RUN_SHOW_NOT_SPECIAL_LICENSE()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<RUN_SHOW_NOT_SPECIAL_LICENSEResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TBL_COLOR_LICENSE")]
@@ -2220,6 +2227,194 @@ namespace EPowerGenerateLicense
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_COLOR_ID", DbType="Int NOT NULL")]
 		public int COLOR_ID
+		{
+			get
+			{
+				return this._COLOR_ID;
+			}
+			set
+			{
+				if ((this._COLOR_ID != value))
+				{
+					this._COLOR_ID = value;
+				}
+			}
+		}
+	}
+	
+	public partial class RUN_SHOW_NOT_SPECIAL_LICENSEResult
+	{
+		
+		private int _LICENSE_ID;
+		
+		private System.Nullable<int> _LICENSE_TYPE_ID;
+		
+		private string _ACCOUNT_NO;
+		
+		private string _ACCOUNT_NAME;
+		
+		private string _CONTACT_NAME;
+		
+		private string _PHONE;
+		
+		private string _ADDRESS;
+		
+		private string _EMAIL;
+		
+		private bool _IS_ACTIVE;
+		
+		private System.Nullable<int> _COLOR_ID;
+		
+		public RUN_SHOW_NOT_SPECIAL_LICENSEResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LICENSE_ID", DbType="Int NOT NULL")]
+		public int LICENSE_ID
+		{
+			get
+			{
+				return this._LICENSE_ID;
+			}
+			set
+			{
+				if ((this._LICENSE_ID != value))
+				{
+					this._LICENSE_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LICENSE_TYPE_ID", DbType="Int")]
+		public System.Nullable<int> LICENSE_TYPE_ID
+		{
+			get
+			{
+				return this._LICENSE_TYPE_ID;
+			}
+			set
+			{
+				if ((this._LICENSE_TYPE_ID != value))
+				{
+					this._LICENSE_TYPE_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ACCOUNT_NO", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
+		public string ACCOUNT_NO
+		{
+			get
+			{
+				return this._ACCOUNT_NO;
+			}
+			set
+			{
+				if ((this._ACCOUNT_NO != value))
+				{
+					this._ACCOUNT_NO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ACCOUNT_NAME", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+		public string ACCOUNT_NAME
+		{
+			get
+			{
+				return this._ACCOUNT_NAME;
+			}
+			set
+			{
+				if ((this._ACCOUNT_NAME != value))
+				{
+					this._ACCOUNT_NAME = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CONTACT_NAME", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+		public string CONTACT_NAME
+		{
+			get
+			{
+				return this._CONTACT_NAME;
+			}
+			set
+			{
+				if ((this._CONTACT_NAME != value))
+				{
+					this._CONTACT_NAME = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PHONE", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+		public string PHONE
+		{
+			get
+			{
+				return this._PHONE;
+			}
+			set
+			{
+				if ((this._PHONE != value))
+				{
+					this._PHONE = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ADDRESS", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+		public string ADDRESS
+		{
+			get
+			{
+				return this._ADDRESS;
+			}
+			set
+			{
+				if ((this._ADDRESS != value))
+				{
+					this._ADDRESS = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EMAIL", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+		public string EMAIL
+		{
+			get
+			{
+				return this._EMAIL;
+			}
+			set
+			{
+				if ((this._EMAIL != value))
+				{
+					this._EMAIL = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IS_ACTIVE", DbType="Bit NOT NULL")]
+		public bool IS_ACTIVE
+		{
+			get
+			{
+				return this._IS_ACTIVE;
+			}
+			set
+			{
+				if ((this._IS_ACTIVE != value))
+				{
+					this._IS_ACTIVE = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_COLOR_ID", DbType="Int")]
+		public System.Nullable<int> COLOR_ID
 		{
 			get
 			{

@@ -21,7 +21,7 @@ namespace EPowerGenerateLicense.Component
         {
             InitializeComponent();
         }
-        private ColorDialog colordiaglog;
+      
         private bool invalid()
         {
             bool flag = false;
@@ -64,32 +64,32 @@ namespace EPowerGenerateLicense.Component
             {
                 using (TBL_LICENSE_TYPE_DATA_ACCESS lda = new TBL_LICENSE_TYPE_DATA_ACCESS())
                 {
-                    dataGridViewLicense.DataSource = lda.ShowLicenseTypeSpecial();
+                    dataGridViewLicense.DataSource = lda.ShowLicenseType();
                 }
             }
         }
 
         private void dataGridViewLicense_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            //int index = 6;  // COLOR_ID
+          //  int index = 13;  // COLOR_ID
             //foreach (DataGridViewRow row in dataGridViewLicense.Rows)
             //{
-            //    if ((int)row.Cells[index].Value == 1)
+            //    if ((int)row.Cells["COLOR_ID"].Value == 1)
             //    {
             //        row.DefaultCellStyle.ForeColor = Color.Red;
             //        row.DefaultCellStyle.SelectionForeColor = Color.Red;
             //    }
-            //    else if ((int)row.Cells[index].Value == 2)
+            //    else if ((int)row.Cells["COLOR_ID"].Value == 2)
             //    {
             //        row.DefaultCellStyle.ForeColor = Color.Fuchsia;
             //        row.DefaultCellStyle.SelectionForeColor = Color.Fuchsia;
             //    }
-            //    else if ((int)row.Cells[index].Value == 3)
+            //    else if ((int)row.Cells["COLOR_ID"].Value == 3)
             //    {
             //        row.DefaultCellStyle.ForeColor = Color.Blue;
             //        row.DefaultCellStyle.SelectionForeColor = Color.Blue;
             //    }
-            //    else if ((int)row.Cells[index].Value == 4)
+            //    else if ((int)row.Cells["COLOR_ID"].Value == 4)
             //    {
             //        row.DefaultCellStyle.ForeColor = Color.Black;
             //        row.DefaultCellStyle.SelectionForeColor = Color.Black;
@@ -128,9 +128,8 @@ namespace EPowerGenerateLicense.Component
             {
                 foreach (DataGridViewRow row in dataGridViewLicense.SelectedRows)
                 {
-                    ID = Convert.ToInt32(row.Cells[0].Value);
+                    ID = Convert.ToInt32(row.Cells["Column7"].Value);
                 }
-                //MessageBox.Show(ID.ToString());
                 foreach (var item in lda.ShowLicenseByID(ID))
                 {
                     txtAccountName.Text = item.ACCOUNT_NAME;

@@ -18,7 +18,7 @@ namespace EPowerGenerateLicense.Interface
         {
             InitializeComponent();
         }
-
+        LicenseDataContext _context = null;
         private void ControlLicenseSpecial_Load(object sender, EventArgs e)
         {
             try
@@ -37,7 +37,7 @@ namespace EPowerGenerateLicense.Interface
 
         private void dataGridViewLicense_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            int index = 12;  // COLOR_ID
+            int index = 13;  // COLOR_ID
             foreach (DataGridViewRow row in dataGridViewLicense.Rows)
             {
                 if ((int)row.Cells[index].Value == 1)
@@ -123,8 +123,8 @@ namespace EPowerGenerateLicense.Interface
             {
                 foreach (DataGridViewRow row in dataGridViewLicense.SelectedRows)
                 {
-                    LICENSE_ID = Convert.ToInt32(row.Cells[0].Value);
-                    COLOR_ID = Convert.ToInt32(row.Cells[12].Value);
+                    LICENSE_ID = Convert.ToInt32(row.Cells["ID"].Value);
+                    COLOR_ID = Convert.ToInt32(row.Cells["COLOR_ID1"].Value);
                 }
                // MessageBox.Show(LICENSE_ID.ToString());
                 FormEditSpecialLicense frmeditspeciallicense = new FormEditSpecialLicense();
@@ -144,7 +144,34 @@ namespace EPowerGenerateLicense.Interface
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-
+            int ID = 0;
+            try
+            {
+                foreach (DataGridViewRow row in dataGridViewLicense.SelectedRows)
+                {
+                    ID = Convert.ToInt32(row.Cells["LICENSE_TYPE_ID"].Value);
+                }
+               // MessageBox.Show(ID.ToString());
+                using (_context = new LicenseDataContext())
+                {
+                    TBL_LICENSE_TYPE license = (from l in _context.TBL_LICENSE_TYPEs
+                                           where l.LICENSE_TYPE_ID == ID
+                                           select l).FirstOrDefault();
+                    license.IS_ACTIVE = false;
+                    _context.SubmitChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                using (TBL_LICENSE_TYPE_DATA_ACCESS ltda = new TBL_LICENSE_TYPE_DATA_ACCESS())
+                {
+                    dataGridViewLicense.DataSource = ltda.ShowLicenseType();
+                };
+            }
         }
     }
 }
