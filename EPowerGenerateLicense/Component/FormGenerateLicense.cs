@@ -104,7 +104,7 @@ namespace EPowerGenerateLicense.Component
                                     SCHEDULE_ID = Convert.ToInt32(item),
                                     CREATE_ON = Convert.ToDateTime(dateTimePickerLicenseGenerate.Value.ToString("yyy-MM-dd hh:mm")),
                                     CREATE_BY = cboUser.Text,
-                                    NOTE = "-",
+                                    NOTE = "Not yet.",
                                     FOLLOW_UP_BY = cboFollowUpBy.Text,
                                     LAST_MODIFIED = DateTime.Now,
                                     IS_ACTIVE = true

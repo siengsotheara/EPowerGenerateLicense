@@ -22,35 +22,15 @@ namespace EPowerGenerateLicense.Model
                 _context.SubmitChanges();
             };
         }
-        public List<RUN_SHOW_NOT_SPECIAL_LICENSEResult> ShowLicenseTypeSpecial()
+       
+        public List<RUN_SHOW_NOT_SPECIAL_LICENSEResult> ShowLicenseTypeNotSpecial()
         {
             _context = new LicenseDataContext();
             var all = _context.RUN_SHOW_NOT_SPECIAL_LICENSE();
             return all.ToList();
         }
        
-        //public IQueryable<CLASS_TBL_LICENSE_TYPE> ShowLicenseTypeSpecial()
-        //{
-        //    _context = new LicenseDataContext();
-        //    var all = (from l in _context.TBL_LICENSEs
-        //               join lt in _context.TBL_LICENSE_TYPEs on l.LICENSE_ID equals (int?)lt.LICENSE_ID
-        //                   into groupLicense
-        //               from LicenseType in groupLicense.DefaultIfEmpty()
-        //               where LicenseType.LICENSE_ID == null// && LicenseType.IS_ACTIVE==true
-        //               select new CLASS_TBL_LICENSE_TYPE
-        //               {
-        //                   LICENSE_TYPE_ID = LicenseType.LICENSE_TYPE_ID,
-        //                   LICENSE_ID = l.LICENSE_ID,
-        //                   ACCOUNT_NO = l.ACCOUNT_NO,
-        //                   ACCOUNT_NAME = l.ACCOUNT_NAME,
-        //                   PHONE = l.PHONE,
-        //                   CONTACT_NAME = l.CONTACT_NAME,
-        //                   ADDRESS = l.ADDRESS,
-        //                   COLOR_ID = LicenseType.COLOR_ID
-        //               }).Take(24);
-        //    return all;
-        //}
-        public IQueryable<CLASS_TBL_LICENSE_TYPE> ShowLicenseType()
+        public IQueryable<CLASS_TBL_LICENSE_TYPE> ShowLicenseTypeSpecial()
         {
             _context = new LicenseDataContext();
             var all = (from l in _context.TBL_LICENSEs
@@ -75,14 +55,16 @@ namespace EPowerGenerateLicense.Model
             _context = new LicenseDataContext();
             var all = (from l in _context.TBL_LICENSEs
                        join lt in _context.TBL_LICENSE_TYPEs on l.LICENSE_ID equals lt.LICENSE_ID
-                       where l.IS_ACTIVE == true && ((l.ADDRESS.Contains(prompt) 
-                       || l.CONTACT_NAME.Contains(prompt) 
+                       where (l.ADDRESS.Contains(prompt)
+                       || l.CONTACT_NAME.Contains(prompt)
                        || l.ACCOUNT_NO.Contains(prompt)
                        || l.ACCOUNT_NAME.Contains(prompt)
                        || l.PROVINCE_NAME.Contains(prompt)
-                       || l.PHONE.Contains(prompt)))
+                       || l.PHONE.Contains(prompt)) && lt.IS_ACTIVE == true
                        select new CLASS_TBL_LICENSE_TYPE
                        {
+                           LICENSE_TYPE_ID = lt.LICENSE_TYPE_ID,
+                           LICENSE_ID = l.LICENSE_ID,
                            ACCOUNT_NO = l.ACCOUNT_NO,
                            ACCOUNT_NAME = l.ACCOUNT_NAME,
                            CONTACT_NAME = l.CONTACT_NAME,

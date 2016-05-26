@@ -78,6 +78,7 @@
             // 
             // txtPassword
             // 
+            this.txtPassword.AcceptsReturn = true;
             this.txtPassword.Font = new System.Drawing.Font("Khmer OS System", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(168, 108);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -134,6 +135,7 @@
             // 
             // FormAddUser
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(453, 213);

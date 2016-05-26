@@ -41,7 +41,7 @@ namespace EPowerGenerateLicense.Component
             {
                 using (TBL_LICENSE_TYPE_DATA_ACCESS lda = new TBL_LICENSE_TYPE_DATA_ACCESS())
                 {
-                    dataGridViewLicense.DataSource = lda.ShowLicenseTypeSpecial();
+                    dataGridViewLicense.DataSource = lda.ShowLicenseTypeNotSpecial();
                 }
             }
             catch (Exception ex)
@@ -51,56 +51,8 @@ namespace EPowerGenerateLicense.Component
             
         }
 
-        private void txtSearch_TextChanged(object sender, EventArgs e)
-        {
-            if (txtSearch.Text.Length > 0)
-            {
-                using (TBL_LICENSE_DATA_ACCESS lda = new TBL_LICENSE_DATA_ACCESS())
-                {
-                    dataGridViewLicense.DataSource = lda.Search(txtSearch.Text);
-                }
-            }
-            else
-            {
-                using (TBL_LICENSE_TYPE_DATA_ACCESS lda = new TBL_LICENSE_TYPE_DATA_ACCESS())
-                {
-                    dataGridViewLicense.DataSource = lda.ShowLicenseType();
-                }
-            }
-        }
+      
 
-        private void dataGridViewLicense_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
-        {
-          //  int index = 13;  // COLOR_ID
-            //foreach (DataGridViewRow row in dataGridViewLicense.Rows)
-            //{
-            //    if ((int)row.Cells["COLOR_ID"].Value == 1)
-            //    {
-            //        row.DefaultCellStyle.ForeColor = Color.Red;
-            //        row.DefaultCellStyle.SelectionForeColor = Color.Red;
-            //    }
-            //    else if ((int)row.Cells["COLOR_ID"].Value == 2)
-            //    {
-            //        row.DefaultCellStyle.ForeColor = Color.Fuchsia;
-            //        row.DefaultCellStyle.SelectionForeColor = Color.Fuchsia;
-            //    }
-            //    else if ((int)row.Cells["COLOR_ID"].Value == 3)
-            //    {
-            //        row.DefaultCellStyle.ForeColor = Color.Blue;
-            //        row.DefaultCellStyle.SelectionForeColor = Color.Blue;
-            //    }
-            //    else if ((int)row.Cells["COLOR_ID"].Value == 4)
-            //    {
-            //        row.DefaultCellStyle.ForeColor = Color.Black;
-            //        row.DefaultCellStyle.SelectionForeColor = Color.Black;
-            //    }
-            //    else
-            //    {
-            //        row.DefaultCellStyle.ForeColor = Color.Black;
-            //        row.DefaultCellStyle.SelectionForeColor = Color.Black;
-            //    }
-            //}
-        }
         private LicenseDataContext _context;
         private void dataGridViewLicense_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
         {
@@ -111,12 +63,7 @@ namespace EPowerGenerateLicense.Component
         }
         int ID;
         private int LICENSE_ID;
-        private void dataGridViewLicense_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-            
-        }
-
+     
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -128,7 +75,7 @@ namespace EPowerGenerateLicense.Component
             {
                 foreach (DataGridViewRow row in dataGridViewLicense.SelectedRows)
                 {
-                    ID = Convert.ToInt32(row.Cells["Column7"].Value);
+                    ID = Convert.ToInt32(row.Cells["L_ID"].Value);
                 }
                 foreach (var item in lda.ShowLicenseByID(ID))
                 {
@@ -184,10 +131,37 @@ namespace EPowerGenerateLicense.Component
 
             }
             GC.Collect();
-            
+
         }
 
-        private void txtAccountName_TextChanged(object sender, EventArgs e)
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtSearch.Text.Length > 0)
+                {
+                    using (TBL_LICENSE_TYPE_DATA_ACCESS ltda = new TBL_LICENSE_TYPE_DATA_ACCESS())
+                    {
+                       
+                    }
+                }
+                else
+                {
+                    using (TBL_LICENSE_TYPE_DATA_ACCESS ltda = new TBL_LICENSE_TYPE_DATA_ACCESS())
+                    {
+                        dataGridViewLicense.DataSource = ltda.ShowLicenseTypeNotSpecial();
+                    }
+                }
+                
+
+            }
+            catch (Exception ex)
+            {
+                 MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txtSearch_Click(object sender, EventArgs e)
         {
 
         }

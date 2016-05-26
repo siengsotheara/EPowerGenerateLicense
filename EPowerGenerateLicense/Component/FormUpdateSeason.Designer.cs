@@ -47,7 +47,7 @@
             this.btnSave.Location = new System.Drawing.Point(291, 226);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 4;
+            this.btnSave.TabIndex = 2;
             this.btnSave.Text = "&រក្សាទុក";
             this.btnSave.UseSelectable = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -57,7 +57,7 @@
             this.btnClose.Location = new System.Drawing.Point(372, 226);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
-            this.btnClose.TabIndex = 5;
+            this.btnClose.TabIndex = 3;
             this.btnClose.Text = "&បោះបង់";
             this.btnClose.UseSelectable = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -83,6 +83,7 @@
             // 
             // txtSeasonName
             // 
+            this.txtSeasonName.AcceptsReturn = true;
             this.txtSeasonName.Font = new System.Drawing.Font("Khmer OS System", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSeasonName.Location = new System.Drawing.Point(176, 66);
             this.txtSeasonName.Name = "txtSeasonName";
@@ -158,6 +159,7 @@
             // 
             // FormUpdateSeason
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(470, 256);

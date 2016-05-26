@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewLicense = new System.Windows.Forms.DataGridView();
             this.txtLicenseNumber = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,20 +45,16 @@
             this.cboColor = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IS_ACTIVE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.COLOR_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.L_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EMAIL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LICENSE_TYPE_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PROVINCE_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DISTRICT_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.COMMUNE_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VILLAGE_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ACCOUNT_NO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ACCOUNT_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CONTACT_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PHONE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ADDRESS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IS_ACTIVE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.COLOR_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLicense)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,6 +65,7 @@
             this.dataGridViewLicense.AllowUserToResizeColumns = false;
             this.dataGridViewLicense.AllowUserToResizeRows = false;
             this.dataGridViewLicense.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewLicense.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewLicense.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewLicense.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewLicense.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
@@ -81,29 +79,25 @@
             this.dataGridViewLicense.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewLicense.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewLicense.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column7,
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.IS_ACTIVE,
-            this.COLOR_ID,
+            this.L_ID,
             this.EMAIL,
             this.LICENSE_TYPE_ID,
-            this.PROVINCE_NAME,
-            this.DISTRICT_NAME,
-            this.COMMUNE_NAME,
-            this.VILLAGE_NAME});
+            this.ACCOUNT_NO,
+            this.ACCOUNT_NAME,
+            this.CONTACT_NAME,
+            this.PHONE,
+            this.ADDRESS,
+            this.IS_ACTIVE,
+            this.COLOR_ID});
             this.dataGridViewLicense.Cursor = System.Windows.Forms.Cursors.Arrow;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Khmer OS System", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewLicense.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Khmer OS System", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewLicense.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewLicense.EnableHeadersVisualStyles = false;
             this.dataGridViewLicense.Location = new System.Drawing.Point(8, 191);
             this.dataGridViewLicense.MultiSelect = false;
@@ -114,8 +108,6 @@
             this.dataGridViewLicense.Size = new System.Drawing.Size(674, 256);
             this.dataGridViewLicense.TabIndex = 4;
             this.dataGridViewLicense.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewLicense_CellClick);
-            this.dataGridViewLicense.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewLicense_CellContentClick);
-            this.dataGridViewLicense.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridViewLicense_CellFormatting);
             this.dataGridViewLicense.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dataGridViewLicense_RowPrePaint);
             // 
             // txtLicenseNumber
@@ -143,7 +135,6 @@
             this.txtAccountName.ReadOnly = true;
             this.txtAccountName.Size = new System.Drawing.Size(547, 27);
             this.txtAccountName.TabIndex = 60;
-            this.txtAccountName.TextChanged += new System.EventHandler(this.txtAccountName_TextChanged);
             // 
             // label1
             // 
@@ -188,6 +179,7 @@
             this.txtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            this.txtSearch.Click += new System.EventHandler(this.txtSearch_Click);
             // 
             // label5
             // 
@@ -259,76 +251,13 @@
             this.label6.TabIndex = 76;
             this.label6.Text = "ព័ណ";
             // 
-            // Column7
+            // L_ID
             // 
-            this.Column7.DataPropertyName = "LICENSE_ID";
-            this.Column7.HeaderText = "LICENSE_ID";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column7.Visible = false;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "ACCOUNT_NO";
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Khmer OS System", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column1.FillWeight = 35.97894F;
-            this.Column1.HeaderText = "លេខកូថ";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "ACCOUNT_NAME";
-            this.Column2.FillWeight = 140.0721F;
-            this.Column2.HeaderText = "ឈ្មោះគណនី";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "CONTACT_NAME";
-            this.Column3.FillWeight = 86.43465F;
-            this.Column3.HeaderText = "ទំនាក់ទំនង";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Visible = false;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "PHONE";
-            this.Column4.FillWeight = 120.4686F;
-            this.Column4.HeaderText = "ទូរស័ព្ទ";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "ADDRESS";
-            this.Column5.FillWeight = 150.0457F;
-            this.Column5.HeaderText = "អសយដ្ខាន";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column5.Visible = false;
-            // 
-            // IS_ACTIVE
-            // 
-            this.IS_ACTIVE.DataPropertyName = "IS_ACTIVE";
-            this.IS_ACTIVE.HeaderText = "IS_ACTIVE";
-            this.IS_ACTIVE.Name = "IS_ACTIVE";
-            this.IS_ACTIVE.ReadOnly = true;
-            this.IS_ACTIVE.Visible = false;
-            // 
-            // COLOR_ID
-            // 
-            this.COLOR_ID.DataPropertyName = "COLOR_ID";
-            this.COLOR_ID.HeaderText = "COLOR_ID";
-            this.COLOR_ID.Name = "COLOR_ID";
-            this.COLOR_ID.ReadOnly = true;
-            this.COLOR_ID.Visible = false;
+            this.L_ID.DataPropertyName = "LICENSE_ID";
+            this.L_ID.HeaderText = "LICENSE_ID";
+            this.L_ID.Name = "L_ID";
+            this.L_ID.ReadOnly = true;
+            this.L_ID.Visible = false;
             // 
             // EMAIL
             // 
@@ -346,37 +275,65 @@
             this.LICENSE_TYPE_ID.ReadOnly = true;
             this.LICENSE_TYPE_ID.Visible = false;
             // 
-            // PROVINCE_NAME
+            // ACCOUNT_NO
             // 
-            this.PROVINCE_NAME.DataPropertyName = "PROVINCE_NAME";
-            this.PROVINCE_NAME.HeaderText = "PROVINCE_NAME";
-            this.PROVINCE_NAME.Name = "PROVINCE_NAME";
-            this.PROVINCE_NAME.ReadOnly = true;
-            this.PROVINCE_NAME.Visible = false;
+            this.ACCOUNT_NO.DataPropertyName = "ACCOUNT_NO";
+            this.ACCOUNT_NO.FillWeight = 50.76142F;
+            this.ACCOUNT_NO.HeaderText = "លេខកូថ";
+            this.ACCOUNT_NO.Name = "ACCOUNT_NO";
+            this.ACCOUNT_NO.ReadOnly = true;
             // 
-            // DISTRICT_NAME
+            // ACCOUNT_NAME
             // 
-            this.DISTRICT_NAME.DataPropertyName = "DISTRICT_NAME";
-            this.DISTRICT_NAME.HeaderText = "DISTRICT_NAME";
-            this.DISTRICT_NAME.Name = "DISTRICT_NAME";
-            this.DISTRICT_NAME.ReadOnly = true;
-            this.DISTRICT_NAME.Visible = false;
+            this.ACCOUNT_NAME.DataPropertyName = "ACCOUNT_NAME";
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ACCOUNT_NAME.DefaultCellStyle = dataGridViewCellStyle2;
+            this.ACCOUNT_NAME.FillWeight = 116.4129F;
+            this.ACCOUNT_NAME.HeaderText = "គណនី";
+            this.ACCOUNT_NAME.Name = "ACCOUNT_NAME";
+            this.ACCOUNT_NAME.ReadOnly = true;
             // 
-            // COMMUNE_NAME
+            // CONTACT_NAME
             // 
-            this.COMMUNE_NAME.DataPropertyName = "COMMUNE_NAME";
-            this.COMMUNE_NAME.HeaderText = "COMMUNE_NAME";
-            this.COMMUNE_NAME.Name = "COMMUNE_NAME";
-            this.COMMUNE_NAME.ReadOnly = true;
-            this.COMMUNE_NAME.Visible = false;
+            this.CONTACT_NAME.DataPropertyName = "CONTACT_NAME";
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CONTACT_NAME.DefaultCellStyle = dataGridViewCellStyle3;
+            this.CONTACT_NAME.FillWeight = 116.4129F;
+            this.CONTACT_NAME.HeaderText = "ទំនាក់ទំនង";
+            this.CONTACT_NAME.Name = "CONTACT_NAME";
+            this.CONTACT_NAME.ReadOnly = true;
             // 
-            // VILLAGE_NAME
+            // PHONE
             // 
-            this.VILLAGE_NAME.DataPropertyName = "VILLAGE_NAME";
-            this.VILLAGE_NAME.HeaderText = "VILLAGE_NAME";
-            this.VILLAGE_NAME.Name = "VILLAGE_NAME";
-            this.VILLAGE_NAME.ReadOnly = true;
-            this.VILLAGE_NAME.Visible = false;
+            this.PHONE.DataPropertyName = "PHONE";
+            this.PHONE.FillWeight = 116.4129F;
+            this.PHONE.HeaderText = "ទូរស័ព្ទ";
+            this.PHONE.Name = "PHONE";
+            this.PHONE.ReadOnly = true;
+            // 
+            // ADDRESS
+            // 
+            this.ADDRESS.DataPropertyName = "ADDRESS";
+            this.ADDRESS.HeaderText = "ADDRESS";
+            this.ADDRESS.Name = "ADDRESS";
+            this.ADDRESS.ReadOnly = true;
+            this.ADDRESS.Visible = false;
+            // 
+            // IS_ACTIVE
+            // 
+            this.IS_ACTIVE.DataPropertyName = "IS_ACTIVE";
+            this.IS_ACTIVE.HeaderText = "IS_ACTIVE";
+            this.IS_ACTIVE.Name = "IS_ACTIVE";
+            this.IS_ACTIVE.ReadOnly = true;
+            this.IS_ACTIVE.Visible = false;
+            // 
+            // COLOR_ID
+            // 
+            this.COLOR_ID.DataPropertyName = "COLOR_ID";
+            this.COLOR_ID.HeaderText = "COLOR_ID";
+            this.COLOR_ID.Name = "COLOR_ID";
+            this.COLOR_ID.ReadOnly = true;
+            this.COLOR_ID.Visible = false;
             // 
             // FormAddNewSpecialLicense
             // 
@@ -426,20 +383,16 @@
         private System.Windows.Forms.ComboBox cboColor;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IS_ACTIVE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn COLOR_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn L_ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn EMAIL;
         private System.Windows.Forms.DataGridViewTextBoxColumn LICENSE_TYPE_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PROVINCE_NAME;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DISTRICT_NAME;
-        private System.Windows.Forms.DataGridViewTextBoxColumn COMMUNE_NAME;
-        private System.Windows.Forms.DataGridViewTextBoxColumn VILLAGE_NAME;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ACCOUNT_NO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ACCOUNT_NAME;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CONTACT_NAME;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PHONE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ADDRESS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IS_ACTIVE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn COLOR_ID;
 
 
     }

@@ -39,11 +39,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnAddNew = new MetroFramework.Controls.MetroButton();
-            this.btnEdit = new MetroFramework.Controls.MetroButton();
-            this.btnDelete = new MetroFramework.Controls.MetroButton();
-            this.txtSearch = new MetroFramework.Controls.MetroTextBox();
             this.dataGridViewLicense = new System.Windows.Forms.DataGridView();
             this.LICENSE_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ACCOUNT_NO = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,11 +53,16 @@
             this.VILLAGE_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IS_ACTIVE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.COLOR_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnAddNew = new MetroFramework.Controls.MetroButton();
+            this.btnEdit = new MetroFramework.Controls.MetroButton();
+            this.btnDelete = new MetroFramework.Controls.MetroButton();
+            this.txtSearch = new MetroFramework.Controls.MetroTextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLicense)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -109,94 +109,6 @@
             this.panel3.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
             this.panel3.Size = new System.Drawing.Size(1135, 431);
             this.panel3.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel4.Controls.Add(this.btnAddNew);
-            this.panel4.Controls.Add(this.btnEdit);
-            this.panel4.Controls.Add(this.btnDelete);
-            this.panel4.Controls.Add(this.txtSearch);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel4.ForeColor = System.Drawing.Color.Black;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.MaximumSize = new System.Drawing.Size(0, 60);
-            this.panel4.MinimumSize = new System.Drawing.Size(0, 28);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1135, 60);
-            this.panel4.TabIndex = 0;
-            // 
-            // btnAddNew
-            // 
-            this.btnAddNew.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddNew.Highlight = true;
-            this.btnAddNew.Location = new System.Drawing.Point(907, 30);
-            this.btnAddNew.Name = "btnAddNew";
-            this.btnAddNew.Size = new System.Drawing.Size(71, 23);
-            this.btnAddNew.TabIndex = 3;
-            this.btnAddNew.Text = "បន្ថែមថ្មី";
-            this.btnAddNew.UseSelectable = true;
-            this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdit.Highlight = true;
-            this.btnEdit.Location = new System.Drawing.Point(984, 30);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(71, 23);
-            this.btnEdit.TabIndex = 2;
-            this.btnEdit.Text = "កែប្រែ";
-            this.btnEdit.UseSelectable = true;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.Enabled = false;
-            this.btnDelete.Highlight = true;
-            this.btnDelete.Location = new System.Drawing.Point(1061, 30);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(71, 23);
-            this.btnDelete.TabIndex = 1;
-            this.btnDelete.Text = "លុប";
-            this.btnDelete.UseSelectable = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // txtSearch
-            // 
-            // 
-            // 
-            // 
-            this.txtSearch.CustomButton.Image = null;
-            this.txtSearch.CustomButton.Location = new System.Drawing.Point(201, 1);
-            this.txtSearch.CustomButton.Name = "";
-            this.txtSearch.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtSearch.CustomButton.TabIndex = 1;
-            this.txtSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtSearch.CustomButton.UseSelectable = true;
-            this.txtSearch.Lines = new string[0];
-            this.txtSearch.Location = new System.Drawing.Point(3, 31);
-            this.txtSearch.MaxLength = 32767;
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.PasswordChar = '\0';
-            this.txtSearch.PromptText = "ស្វែងរក";
-            this.txtSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtSearch.SelectedText = "";
-            this.txtSearch.SelectionLength = 0;
-            this.txtSearch.SelectionStart = 0;
-            this.txtSearch.ShortcutsEnabled = true;
-            this.txtSearch.ShowButton = true;
-            this.txtSearch.ShowClearButton = true;
-            this.txtSearch.Size = new System.Drawing.Size(223, 23);
-            this.txtSearch.TabIndex = 0;
-            this.txtSearch.UseSelectable = true;
-            this.txtSearch.WaterMark = "ស្វែងរក";
-            this.txtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // dataGridViewLicense
             // 
@@ -389,6 +301,95 @@
             this.COLOR_ID.ReadOnly = true;
             this.COLOR_ID.Visible = false;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel4.Controls.Add(this.btnAddNew);
+            this.panel4.Controls.Add(this.btnEdit);
+            this.panel4.Controls.Add(this.btnDelete);
+            this.panel4.Controls.Add(this.txtSearch);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel4.ForeColor = System.Drawing.Color.Black;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.MaximumSize = new System.Drawing.Size(0, 60);
+            this.panel4.MinimumSize = new System.Drawing.Size(0, 28);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1135, 60);
+            this.panel4.TabIndex = 0;
+            // 
+            // btnAddNew
+            // 
+            this.btnAddNew.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddNew.Highlight = true;
+            this.btnAddNew.Location = new System.Drawing.Point(907, 30);
+            this.btnAddNew.Name = "btnAddNew";
+            this.btnAddNew.Size = new System.Drawing.Size(71, 23);
+            this.btnAddNew.TabIndex = 3;
+            this.btnAddNew.Text = "បន្ថែមថ្មី";
+            this.btnAddNew.UseSelectable = true;
+            this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEdit.Highlight = true;
+            this.btnEdit.Location = new System.Drawing.Point(984, 30);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(71, 23);
+            this.btnEdit.TabIndex = 2;
+            this.btnEdit.Text = "កែប្រែ";
+            this.btnEdit.UseSelectable = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.Enabled = false;
+            this.btnDelete.Highlight = true;
+            this.btnDelete.Location = new System.Drawing.Point(1061, 30);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(71, 23);
+            this.btnDelete.TabIndex = 1;
+            this.btnDelete.Text = "លុប";
+            this.btnDelete.UseSelectable = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // txtSearch
+            // 
+            // 
+            // 
+            // 
+            this.txtSearch.CustomButton.Image = null;
+            this.txtSearch.CustomButton.Location = new System.Drawing.Point(201, 1);
+            this.txtSearch.CustomButton.Name = "";
+            this.txtSearch.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtSearch.CustomButton.TabIndex = 1;
+            this.txtSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtSearch.CustomButton.UseSelectable = true;
+            this.txtSearch.Lines = new string[0];
+            this.txtSearch.Location = new System.Drawing.Point(3, 31);
+            this.txtSearch.MaxLength = 32767;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PasswordChar = '\0';
+            this.txtSearch.PromptText = "ស្វែងរក";
+            this.txtSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtSearch.SelectedText = "";
+            this.txtSearch.SelectionLength = 0;
+            this.txtSearch.SelectionStart = 0;
+            this.txtSearch.ShortcutsEnabled = true;
+            this.txtSearch.ShowButton = true;
+            this.txtSearch.ShowClearButton = true;
+            this.txtSearch.Size = new System.Drawing.Size(223, 23);
+            this.txtSearch.TabIndex = 0;
+            this.txtSearch.UseSelectable = true;
+            this.txtSearch.WaterMark = "ស្វែងរក";
+            this.txtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            this.txtSearch.Enter += new System.EventHandler(this.txtSearch_Enter);
+            // 
             // ControlLicense
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -405,8 +406,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLicense)).EndInit();
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

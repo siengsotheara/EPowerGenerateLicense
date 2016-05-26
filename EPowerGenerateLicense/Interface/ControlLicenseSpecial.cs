@@ -25,37 +25,35 @@ namespace EPowerGenerateLicense.Interface
             {
                 using (TBL_LICENSE_TYPE_DATA_ACCESS ltda = new TBL_LICENSE_TYPE_DATA_ACCESS())
                 {
-                    dataGridViewLicense.DataSource = ltda.ShowLicenseType();
+                    dataGridViewLicense.DataSource = ltda.ShowLicenseTypeSpecial();
                 };
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
             }
-           
         }
 
         private void dataGridViewLicense_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            int index = 13;  // COLOR_ID
             foreach (DataGridViewRow row in dataGridViewLicense.Rows)
             {
-                if ((int)row.Cells[index].Value == 1)
+                if ((int)row.Cells["COLOR_ID1"].Value == 1)
                 {
                     row.DefaultCellStyle.ForeColor = Color.Red;
                     row.DefaultCellStyle.SelectionForeColor = Color.Red;
                 }
-                else if ((int)row.Cells[index].Value == 2)
+                else if ((int)row.Cells["COLOR_ID1"].Value == 2)
                 {
                     row.DefaultCellStyle.ForeColor = Color.Fuchsia;
                     row.DefaultCellStyle.SelectionForeColor = Color.Fuchsia;
                 }
-                else if ((int)row.Cells[index].Value == 3)
+                else if ((int)row.Cells["COLOR_ID1"].Value == 3)
                 {
                     row.DefaultCellStyle.ForeColor = Color.Blue;
                     row.DefaultCellStyle.SelectionForeColor = Color.Blue;
                 }
-                else if ((int)row.Cells[index].Value == 4)
+                else if ((int)row.Cells["COLOR_ID1"].Value == 4)
                 {
                     row.DefaultCellStyle.ForeColor = Color.Black;
                     row.DefaultCellStyle.SelectionForeColor = Color.Black;
@@ -76,20 +74,24 @@ namespace EPowerGenerateLicense.Interface
             }
         }
 
-        private void txtSearch_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             try
             {
-                using (TBL_LICENSE_TYPE_DATA_ACCESS ltda = new TBL_LICENSE_TYPE_DATA_ACCESS())
+                if (txtSearch.Text.Length > 0)
                 {
-                    dataGridViewLicense.DataSource = ltda.Search(txtSearch.Text.Trim());
+                    using (TBL_LICENSE_TYPE_DATA_ACCESS ltda = new TBL_LICENSE_TYPE_DATA_ACCESS())
+                    {
+                        dataGridViewLicense.DataSource = ltda.Search(txtSearch.Text.Trim());
+                    }
                 }
-
+                else
+                {
+                    using (TBL_LICENSE_TYPE_DATA_ACCESS lda = new TBL_LICENSE_TYPE_DATA_ACCESS())
+                    {
+                        dataGridViewLicense.DataSource = lda.ShowLicenseTypeSpecial();
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -103,14 +105,19 @@ namespace EPowerGenerateLicense.Interface
             {
                 FormAddNewSpecialLicense frmspecial = new FormAddNewSpecialLicense();
                 frmspecial.ShowDialog();
-                using (TBL_LICENSE_TYPE_DATA_ACCESS ltda = new TBL_LICENSE_TYPE_DATA_ACCESS())
-                {
-                    dataGridViewLicense.DataSource = ltda.ShowLicenseType();
-                };
+              //  frmspecial.Dispose();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                using (TBL_LICENSE_TYPE_DATA_ACCESS ltda = new TBL_LICENSE_TYPE_DATA_ACCESS())
+                {
+                    dataGridViewLicense.DataSource = ltda.ShowLicenseTypeSpecial();
+                };
+                GC.Collect();
             }
         }
         public static int LICENSE_ID;
@@ -126,13 +133,12 @@ namespace EPowerGenerateLicense.Interface
                     LICENSE_ID = Convert.ToInt32(row.Cells["ID"].Value);
                     COLOR_ID = Convert.ToInt32(row.Cells["COLOR_ID1"].Value);
                 }
-               // MessageBox.Show(LICENSE_ID.ToString());
                 FormEditSpecialLicense frmeditspeciallicense = new FormEditSpecialLicense();
                 frmeditspeciallicense.ShowDialog();
                
                 using (TBL_LICENSE_TYPE_DATA_ACCESS ltda = new TBL_LICENSE_TYPE_DATA_ACCESS())
                 {
-                    dataGridViewLicense.DataSource = ltda.ShowLicenseType();
+                    dataGridViewLicense.DataSource = ltda.ShowLicenseTypeSpecial();
                 };
             }
             catch (Exception ex)
@@ -145,21 +151,30 @@ namespace EPowerGenerateLicense.Interface
         private void btnDelete_Click(object sender, EventArgs e)
         {
             int ID = 0;
+            foreach (DataGridViewRow row in dataGridViewLicense.SelectedRows)
+            {
+                ID = Convert.ToInt32(row.Cells["LICENSE_TYPE_ID"].Value);
+            }
+          
             try
             {
-                foreach (DataGridViewRow row in dataGridViewLicense.SelectedRows)
+                if (ID != 0)
                 {
-                    ID = Convert.ToInt32(row.Cells["LICENSE_TYPE_ID"].Value);
+                    
+                    using (_context = new LicenseDataContext())
+                    {
+                        TBL_LICENSE_TYPE license = (from l in _context.TBL_LICENSE_TYPEs
+                                                    where l.LICENSE_TYPE_ID == ID
+                                                    select l).FirstOrDefault();
+                        _context.TBL_LICENSE_TYPEs.DeleteOnSubmit(license);
+                        _context.SubmitChanges();
+                    }
                 }
-               // MessageBox.Show(ID.ToString());
-                using (_context = new LicenseDataContext())
+                else
                 {
-                    TBL_LICENSE_TYPE license = (from l in _context.TBL_LICENSE_TYPEs
-                                           where l.LICENSE_TYPE_ID == ID
-                                           select l).FirstOrDefault();
-                    license.IS_ACTIVE = false;
-                    _context.SubmitChanges();
+
                 }
+              
             }
             catch (Exception ex)
             {
@@ -169,7 +184,7 @@ namespace EPowerGenerateLicense.Interface
             {
                 using (TBL_LICENSE_TYPE_DATA_ACCESS ltda = new TBL_LICENSE_TYPE_DATA_ACCESS())
                 {
-                    dataGridViewLicense.DataSource = ltda.ShowLicenseType();
+                    dataGridViewLicense.DataSource = ltda.ShowLicenseTypeSpecial();
                 };
             }
         }

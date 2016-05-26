@@ -33,7 +33,7 @@ namespace EPowerGenerateLicense.Model
             _context = new LicenseDataContext();
 
             var all = _context.TBL_LICENSEs.GroupJoin(_context.TBL_LICENSE_TYPEs, l => l.LICENSE_ID, t => (int?)t.LICENSE_ID,
-                                      (license, type) => new { license.LICENSE_ID, license.ACCOUNT_NAME, license.ACCOUNT_NO, license.PHONE, license.CONTACT_NAME, license.EMAIL, license.ADDRESS, license.PROVINCE_NAME, license.DISTRICT_NAME,license.COMMUNE_NAME,license.VILLAGE_NAME, license.IS_ACTIVE, COLOR_ID=(int?)type.SingleOrDefault().COLOR_ID })
+                                      (license, type) => new { license.LICENSE_ID, license.ACCOUNT_NAME, license.ACCOUNT_NO, license.PHONE, license.CONTACT_NAME, license.EMAIL, license.ADDRESS, license.PROVINCE_NAME, license.DISTRICT_NAME, license.COMMUNE_NAME, license.VILLAGE_NAME, license.IS_ACTIVE, COLOR_ID = (int?)type.SingleOrDefault().COLOR_ID})
                                       .Select(x => new { x.LICENSE_ID, x.ACCOUNT_NAME, x.ACCOUNT_NO, x.PHONE, x.CONTACT_NAME, x.EMAIL, x.ADDRESS, x.PROVINCE_NAME, x.DISTRICT_NAME, x.COMMUNE_NAME, x.VILLAGE_NAME, x.IS_ACTIVE, x.COLOR_ID })
                                       .Where(i => i.IS_ACTIVE == true)
                                       .Take(24)
@@ -68,14 +68,15 @@ namespace EPowerGenerateLicense.Model
                 .Where(s => s.IS_ACTIVE == true)
                 .Where
                 (
-                    s => s.ACCOUNT_NO.Contains(prompt)
-                    || s.ACCOUNT_NAME.Contains(prompt)
+                    s => s.ACCOUNT_NO.Contains(prompt) || s.ACCOUNT_NO.ToLower().Contains(prompt)
+                    || s.ACCOUNT_NAME.Contains(prompt) || s.ACCOUNT_NAME.ToLower().Contains(prompt)
                     || s.PHONE.Contains(prompt)
-                    || s.CONTACT_NAME.Contains(prompt)
+                    || s.CONTACT_NAME.Contains(prompt) || s.CONTACT_NAME.ToLower().Contains(prompt)
                     || s.PHONE.Contains(prompt)
                     || s.ADDRESS.Contains(prompt)
                     || s.PROVINCE_NAME.Contains(prompt)
                 )
+                .Take(24)
                 .Select(n => new CLASS_TBL_LICENSE
                 {
                     LICENSE_ID = n.LICENSE_ID,

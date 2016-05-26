@@ -2259,8 +2259,6 @@ namespace EPowerGenerateLicense
 		
 		private string _ADDRESS;
 		
-		private string _EMAIL;
-		
 		private bool _IS_ACTIVE;
 		
 		private System.Nullable<int> _COLOR_ID;
@@ -2377,22 +2375,6 @@ namespace EPowerGenerateLicense
 				if ((this._ADDRESS != value))
 				{
 					this._ADDRESS = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EMAIL", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
-		public string EMAIL
-		{
-			get
-			{
-				return this._EMAIL;
-			}
-			set
-			{
-				if ((this._EMAIL != value))
-				{
-					this._EMAIL = value;
 				}
 			}
 		}

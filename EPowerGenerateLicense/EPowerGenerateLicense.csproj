@@ -85,6 +85,7 @@
     <Compile Include="Class\CLASS_TBL_LICENSE_GENERATE.cs" />
     <Compile Include="Class\CLASS_TBL_LICENSE_SPECIAL.cs" />
     <Compile Include="Class\CLASS_TBL_LICENSE_TYPE.cs" />
+    <Compile Include="Class\CLASS_TBL_LICENSE_TYPE_NOT_SPECIAL.cs" />
     <Compile Include="Class\CLASS_TBL_MIX.cs" />
     <Compile Include="Class\CLASS_TBL_SCHEDULE.cs" />
     <Compile Include="Class\CLASS_TBL_SEASON.cs" />

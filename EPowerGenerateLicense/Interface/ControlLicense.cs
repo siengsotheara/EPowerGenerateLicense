@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using EPowerGenerateLicense.Model;
 using EPowerGenerateLicense.Component;
 using MetroFramework;
+using SoftTech.Helper;
 using EPowerGenerateLicense.Class;
 
 
@@ -74,6 +75,7 @@ namespace EPowerGenerateLicense.Interface
                 dataGridViewLicense.DataSource = lda.ShowLicense();
             }
             btnAddNew.UseSelectable = false;
+            txtSearch.Clear();
             GC.Collect();
         }
 
@@ -135,6 +137,7 @@ namespace EPowerGenerateLicense.Interface
                 dataGridViewLicense.DataSource = lda.ShowLicense();
             }
             btnEdit.UseSelectable = false;
+            txtSearch.Clear();
             GC.Collect();
         }
 
@@ -187,6 +190,11 @@ namespace EPowerGenerateLicense.Interface
                     row.DefaultCellStyle.SelectionForeColor = Color.Black;
                 }
             }
+        }
+
+        private void txtSearch_Enter(object sender, EventArgs e)
+        {
+            InputLanguage.CurrentInputLanguage = UIHelper.English;
         }
 
     }

@@ -112,6 +112,7 @@
             "14",
             "15"});
             this.cboTake.Location = new System.Drawing.Point(191, 172);
+            this.cboTake.MaxDropDownItems = 4;
             this.cboTake.Name = "cboTake";
             this.cboTake.Size = new System.Drawing.Size(223, 30);
             this.cboTake.TabIndex = 3;

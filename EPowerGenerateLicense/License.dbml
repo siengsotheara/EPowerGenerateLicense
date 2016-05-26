@@ -143,7 +143,6 @@
       <Column Name="CONTACT_NAME" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
       <Column Name="PHONE" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
       <Column Name="ADDRESS" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="EMAIL" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
       <Column Name="IS_ACTIVE" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="COLOR_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </ElementType>
